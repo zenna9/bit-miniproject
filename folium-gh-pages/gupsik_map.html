@@ -1,0 +1,3514 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_64bf6ce62eca46fc975d8d01e033999b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://unpkg.com/leaflet.featuregroup.subgroup@1.0.2/dist/leaflet.featuregroup.subgroup.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_64bf6ce62eca46fc975d8d01e033999b" ></div>
+        
+</body>
+<script>    
+    
+            var map_64bf6ce62eca46fc975d8d01e033999b = L.map(
+                "map_64bf6ce62eca46fc975d8d01e033999b",
+                {
+                    center: [37.48987, 127.02188],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11.49999999,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cf86b3a8d90744beb992623b54b84824 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_64bf6ce62eca46fc975d8d01e033999b);
+        
+    
+            var marker_b1b9fd9aa9c74fc297c4cd35eea4eeb2 = L.marker(
+                [37.48987, 127.02188],
+                {}
+            ).addTo(map_64bf6ce62eca46fc975d8d01e033999b);
+        
+    
+            var icon_7ce5e9bdefd8402bbc25440922f90d9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b1b9fd9aa9c74fc297c4cd35eea4eeb2.setIcon(icon_7ce5e9bdefd8402bbc25440922f90d9b);
+        
+    
+            var marker_cluster_57048b92dc8d477d9616c88acbed4086 = L.markerClusterGroup(
+                {}
+            );
+            map_64bf6ce62eca46fc975d8d01e033999b.addLayer(marker_cluster_57048b92dc8d477d9616c88acbed4086);
+        
+    
+            var feature_group_sub_group_c7295b94a8b3437891d7674112cbe906 = L.featureGroup.subGroup(
+                marker_cluster_57048b92dc8d477d9616c88acbed4086
+            );
+            feature_group_sub_group_c7295b94a8b3437891d7674112cbe906.addTo(map_64bf6ce62eca46fc975d8d01e033999b);
+        
+    
+            var feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5 = L.featureGroup.subGroup(
+                marker_cluster_57048b92dc8d477d9616c88acbed4086
+            );
+            feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5.addTo(map_64bf6ce62eca46fc975d8d01e033999b);
+        
+    
+            var layer_control_8c82857a248a420f9989426cd9d5a060 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_cf86b3a8d90744beb992623b54b84824,
+                },
+                overlays :  {
+                    "\uc601\uc5c5\uc911" : feature_group_sub_group_c7295b94a8b3437891d7674112cbe906,
+                    "\uc601\uc5c5 \uc885\ub8cc" : feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5,
+                },
+            };
+            L.control.layers(
+                layer_control_8c82857a248a420f9989426cd9d5a060.base_layers,
+                layer_control_8c82857a248a420f9989426cd9d5a060.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_64bf6ce62eca46fc975d8d01e033999b);
+        
+    
+            var marker_631f9429a0814903b4cd7d31a4ead4e3 = L.marker(
+                [37.54508467, 126.9270188],
+                {}
+            ).addTo(feature_group_sub_group_c7295b94a8b3437891d7674112cbe906);
+        
+    
+        var popup_4e2ccc4b56c946f4b2d64106cc951573 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_481c52b9af964b60a5652bf4e9166f5d = $(`<div id="html_481c52b9af964b60a5652bf4e9166f5d" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>마포어르신돌봄통합센터</strong><br> 영업시간: 월-금 확인요망 <br> 제공대상: 수급자,차상위,기타저소득(식사배달,밑반찬배달<br> 주소: 서울특별시 마포구 토정로 148-14<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_4e2ccc4b56c946f4b2d64106cc951573.setContent(html_481c52b9af964b60a5652bf4e9166f5d);
+        
+
+        marker_631f9429a0814903b4cd7d31a4ead4e3.bindPopup(popup_4e2ccc4b56c946f4b2d64106cc951573)
+        ;
+
+        
+    
+    
+            var marker_e2b03471982e47a28cb41765665af5de = L.marker(
+                [37.5497723, 126.959431],
+                {}
+            ).addTo(feature_group_sub_group_c7295b94a8b3437891d7674112cbe906);
+        
+    
+        var popup_9d36d00fab5a43da890ece9739ab45c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1da54419948f40e58dede106c9381e4e = $(`<div id="html_1da54419948f40e58dede106c9381e4e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>마포노인복지센터</strong><br> 영업시간: 월-금 확인요망 <br> 제공대상: 수급자,차상위,기타저소득(밑반찬배달<br> 주소: 서울특별시 마포구 만리재옛12길 6-2<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_9d36d00fab5a43da890ece9739ab45c0.setContent(html_1da54419948f40e58dede106c9381e4e);
+        
+
+        marker_e2b03471982e47a28cb41765665af5de.bindPopup(popup_9d36d00fab5a43da890ece9739ab45c0)
+        ;
+
+        
+    
+    
+            var marker_cd19a4c458e747ff9046580123e6d2fd = L.marker(
+                [37.55480219, 126.917009],
+                {}
+            ).addTo(feature_group_sub_group_c7295b94a8b3437891d7674112cbe906);
+        
+    
+        var popup_40ee5f9c256c49d98952b600e56d0fc3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca74c68bfefd45988e840d37aad40521 = $(`<div id="html_ca74c68bfefd45988e840d37aad40521" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>보사노인복지센터</strong><br> 영업시간: 월-금 확인요망 <br> 제공대상: 수급자,차상위,기타저소득(밑반찬배달<br> 주소: 서울특별시 마포구 동교로 132-3<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_40ee5f9c256c49d98952b600e56d0fc3.setContent(html_ca74c68bfefd45988e840d37aad40521);
+        
+
+        marker_cd19a4c458e747ff9046580123e6d2fd.bindPopup(popup_40ee5f9c256c49d98952b600e56d0fc3)
+        ;
+
+        
+    
+    
+            var marker_84b597fd9a1943e9ba3c8c24197b6781 = L.marker(
+                [37.4698618, 127.023866],
+                {}
+            ).addTo(feature_group_sub_group_c7295b94a8b3437891d7674112cbe906);
+        
+    
+        var popup_bbd38f9cd1774ea4811f7de8c91ab01f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58321da42ca14fc49149520e02efc14a = $(`<div id="html_58321da42ca14fc49149520e02efc14a" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>우면종합사회복지관</strong><br> 영업시간: 화,금 변동 <br> 제공대상: 선정 기준에 부합하는 만60세 이상 어르신<br> 주소: 서울특별시 서초구 바우뫼로7길 11 우면주공영구임대아파트<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_bbd38f9cd1774ea4811f7de8c91ab01f.setContent(html_58321da42ca14fc49149520e02efc14a);
+        
+
+        marker_84b597fd9a1943e9ba3c8c24197b6781.bindPopup(popup_bbd38f9cd1774ea4811f7de8c91ab01f)
+        ;
+
+        
+    
+    
+            var marker_b15ba7bd9a6248419c7191586e6065ae = L.marker(
+                [37.5719506, 126.9862075],
+                {}
+            ).addTo(feature_group_sub_group_c7295b94a8b3437891d7674112cbe906);
+        
+    
+        var popup_354a95548a9d42e5b4d88eb9d1ca61bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2a16ecdca554154a6f12718f9aae7af = $(`<div id="html_b2a16ecdca554154a6f12718f9aae7af" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>탑골공원 원각사 무료급식소</strong><br> 영업시간: 월-일 10:00-17:00 <br> 제공대상: nan<br> 주소: 서울특별시 종로구 종로17길 36 2층, 3층<br> 비고:    홈페이지: <a href=http://topgolwongaksa.org>http://topgolwongaksa.org</a> </pre>     </body>     </div>`)[0];
+            popup_354a95548a9d42e5b4d88eb9d1ca61bc.setContent(html_b2a16ecdca554154a6f12718f9aae7af);
+        
+
+        marker_b15ba7bd9a6248419c7191586e6065ae.bindPopup(popup_354a95548a9d42e5b4d88eb9d1ca61bc)
+        ;
+
+        
+    
+    
+            var marker_5bd049638739478484c77c9a7f2acf44 = L.marker(
+                [37.5816499, 127.0187586],
+                {}
+            ).addTo(feature_group_sub_group_c7295b94a8b3437891d7674112cbe906);
+        
+    
+        var popup_28169ee0196a4263a1a87906f549ad36 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f24d0cd10d8b4b7591e2620d3e6ccc86 = $(`<div id="html_f24d0cd10d8b4b7591e2620d3e6ccc86" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>바하밥집(노숙인 무료급식소)</strong><br> 영업시간: 화-토 화목 10:00-21:00 수금 10:00-18:00 토 09:00-15:00 <br> 제공대상: nan<br> 주소: 서울특별시 성북구 보문로17길 3<br> 비고: 코로나19로 화목만 운영  홈페이지: <a href=http://www.bahameal.net/>http://www.bahameal.net/</a> </pre>     </body>     </div>`)[0];
+            popup_28169ee0196a4263a1a87906f549ad36.setContent(html_f24d0cd10d8b4b7591e2620d3e6ccc86);
+        
+
+        marker_5bd049638739478484c77c9a7f2acf44.bindPopup(popup_28169ee0196a4263a1a87906f549ad36)
+        ;
+
+        
+    
+    
+            var marker_9db8e4bad8744272bc87c498f1e06815 = L.marker(
+                [37.5624944, 127.1612154],
+                {}
+            ).addTo(feature_group_sub_group_c7295b94a8b3437891d7674112cbe906);
+        
+    
+        var popup_fea3ff811829446e8676ed9c174927b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f8e6e2f0e6d447b98aff316fc68d11c = $(`<div id="html_5f8e6e2f0e6d447b98aff316fc68d11c" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>행복한세상복지센터</strong><br> 영업시간: 월-일 10:00-18:00 <br> 제공대상: nan<br> 주소: 서울특별시 강동구 구천면로57길 24<br> 비고:    홈페이지: <a href=http://cafe.daum.net/happy323232>http://cafe.daum.net/happy323232</a> </pre>     </body>     </div>`)[0];
+            popup_fea3ff811829446e8676ed9c174927b5.setContent(html_5f8e6e2f0e6d447b98aff316fc68d11c);
+        
+
+        marker_9db8e4bad8744272bc87c498f1e06815.bindPopup(popup_fea3ff811829446e8676ed9c174927b5)
+        ;
+
+        
+    
+    
+            var marker_077eadd548a54413a85e9fdd653c9dd0 = L.marker(
+                [37.6154008, 126.9162289],
+                {}
+            ).addTo(feature_group_sub_group_c7295b94a8b3437891d7674112cbe906);
+        
+    
+        var popup_e218a6c82bf14fb58323003b150e26e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f957d44480974db0bf71f04f1bb2a8ab = $(`<div id="html_f957d44480974db0bf71f04f1bb2a8ab" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>나눔의둥지</strong><br> 영업시간: 월-일 09:00-21:00 <br> 제공대상: nan<br> 주소: 서울특별시 은평구 연서로22길 3<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_e218a6c82bf14fb58323003b150e26e5.setContent(html_f957d44480974db0bf71f04f1bb2a8ab);
+        
+
+        marker_077eadd548a54413a85e9fdd653c9dd0.bindPopup(popup_e218a6c82bf14fb58323003b150e26e5)
+        ;
+
+        
+    
+    
+            var marker_51b9f2f88a924bf593ec0b0030b327f5 = L.marker(
+                [37.5634027, 126.9845992],
+                {}
+            ).addTo(feature_group_sub_group_c7295b94a8b3437891d7674112cbe906);
+        
+    
+        var popup_6ad2cffddff44496a9ae45bfc56c85c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0dd9fad6b3246c69e322b2b9b6c52de = $(`<div id="html_f0dd9fad6b3246c69e322b2b9b6c52de" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>명동밥집</strong><br> 영업시간: 일,수,금 11:00-16:00 <br> 제공대상: nan<br> 주소: 서울특별시 중구 명동 명동길 74-1<br> 비고:    홈페이지: <a href=http://mdbj.or.kr>http://mdbj.or.kr</a> </pre>     </body>     </div>`)[0];
+            popup_6ad2cffddff44496a9ae45bfc56c85c5.setContent(html_f0dd9fad6b3246c69e322b2b9b6c52de);
+        
+
+        marker_51b9f2f88a924bf593ec0b0030b327f5.bindPopup(popup_6ad2cffddff44496a9ae45bfc56c85c5)
+        ;
+
+        
+    
+    
+            var marker_4d0264c0de914c94b4f5515586c32c9c = L.marker(
+                [37.62495566, 126.918626],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_decd4d69ad78487b9e5624a85d164d96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00fd4b8b96a34189870e246493ba518d = $(`<div id="html_00fd4b8b96a34189870e246493ba518d" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>갈현노인복지관</strong><br> 영업시간: 월-토 11:00-13:00 <br> 제공대상: 만 60세이상 저소득어르신<br> 주소: 서울특별시 은평구 통일로89길12-6<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_decd4d69ad78487b9e5624a85d164d96.setContent(html_00fd4b8b96a34189870e246493ba518d);
+        
+
+        marker_4d0264c0de914c94b4f5515586c32c9c.bindPopup(popup_decd4d69ad78487b9e5624a85d164d96)
+        ;
+
+        
+    
+    
+            var marker_99c966c1d5104e518ab9c230e10a7c48 = L.marker(
+                [37.5522658, 127.1546206],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_494ab3af8fae45518a4336702efd6576 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b2f7432dac2411388bea4bb72ca58d5 = $(`<div id="html_8b2f7432dac2411388bea4bb72ca58d5" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>강동노인종합복지관</strong><br> 영업시간: 월-금 11:30-12:30 <br> 제공대상: 60세 이상의 결식노인<br> 주소: 서울특별시 강동구 동남로71길 32-5<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_494ab3af8fae45518a4336702efd6576.setContent(html_8b2f7432dac2411388bea4bb72ca58d5);
+        
+
+        marker_99c966c1d5104e518ab9c230e10a7c48.bindPopup(popup_494ab3af8fae45518a4336702efd6576)
+        ;
+
+        
+    
+    
+            var marker_b5262e71e3a941ac8439eaa834b4a91b = L.marker(
+                [37.54004284, 127.1297914],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_faad1a9b3c3842d19d0b3fb602ae110a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7b06bbfe3bc4f528cdf1c994a3e51c7 = $(`<div id="html_d7b06bbfe3bc4f528cdf1c994a3e51c7" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>강동종합사회복지관</strong><br> 영업시간: 월-금 11:30-12:30 <br> 제공대상: 60세 이상의 결식노인<br> 주소: 서울특별시 강동구 진황도로23길 7<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_faad1a9b3c3842d19d0b3fb602ae110a.setContent(html_d7b06bbfe3bc4f528cdf1c994a3e51c7);
+        
+
+        marker_b5262e71e3a941ac8439eaa834b4a91b.bindPopup(popup_faad1a9b3c3842d19d0b3fb602ae110a)
+        ;
+
+        
+    
+    
+            var marker_1b14bb48c12f425f84a10e9740b61540 = L.marker(
+                [37.54459763, 127.1379691],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_112878be99aa4660b20889fca565ca7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d674a4cd2b3d45978c14436c4e86eef2 = $(`<div id="html_d674a4cd2b3d45978c14436c4e86eef2" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>명성복지재단 가나안의 집</strong><br> 영업시간: 월-금 11:30-12:30 <br> 제공대상: 60세 이상의 결식노인<br> 주소: 서울특별시 강동구 천중로35길 73-7<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_112878be99aa4660b20889fca565ca7d.setContent(html_d674a4cd2b3d45978c14436c4e86eef2);
+        
+
+        marker_1b14bb48c12f425f84a10e9740b61540.bindPopup(popup_112878be99aa4660b20889fca565ca7d)
+        ;
+
+        
+    
+    
+            var marker_cf94f29f9b284340a816e9197b3d1896 = L.marker(
+                [37.54620984, 127.1317001],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_7e3264e8877d47a4afe0a919d4995f18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee69fca6e81f4cb7852ba6a2f908d7f5 = $(`<div id="html_ee69fca6e81f4cb7852ba6a2f908d7f5" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>해공노인복지관</strong><br> 영업시간: 월-금 11:30-12:30 <br> 제공대상: 60세 이상의 결식노인<br> 주소: 서울특별시 강동구 천중로17길 42-16<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_7e3264e8877d47a4afe0a919d4995f18.setContent(html_ee69fca6e81f4cb7852ba6a2f908d7f5);
+        
+
+        marker_cf94f29f9b284340a816e9197b3d1896.bindPopup(popup_7e3264e8877d47a4afe0a919d4995f18)
+        ;
+
+        
+    
+    
+            var marker_24bd5b14893641f3abc23dbb71d0e919 = L.marker(
+                [37.56538547, 126.8422562],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_a8f7c389f49449de88d6eeb66d2dad63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7aaecd5a1a53430f9f4aa228635fd20b = $(`<div id="html_7aaecd5a1a53430f9f4aa228635fd20b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>등촌1종합사회복지관</strong><br> 영업시간: 월-토 11:10-12:30 <br> 제공대상: 독거노인, 결식노인, 저소득층 노인<br> 주소: 서울특별시 강서구 강서로 68길 36<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_a8f7c389f49449de88d6eeb66d2dad63.setContent(html_7aaecd5a1a53430f9f4aa228635fd20b);
+        
+
+        marker_24bd5b14893641f3abc23dbb71d0e919.bindPopup(popup_a8f7c389f49449de88d6eeb66d2dad63)
+        ;
+
+        
+    
+    
+            var marker_8a4210c688114960a6e8c9d5d6303caf = L.marker(
+                [37.56225807, 126.8428966],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_d655704e4daa492e9e4e3988bb6bcab5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22bd43344d87466491d1257cce205cde = $(`<div id="html_22bd43344d87466491d1257cce205cde" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>등촌4종합사회복지관</strong><br> 영업시간: 월-토 11:15-12:15 <br> 제공대상: 독거노인, 결식노인, 저소득층 노인<br> 주소: 서울특별시 강서구 공항대로 39길59<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_d655704e4daa492e9e4e3988bb6bcab5.setContent(html_22bd43344d87466491d1257cce205cde);
+        
+
+        marker_8a4210c688114960a6e8c9d5d6303caf.bindPopup(popup_d655704e4daa492e9e4e3988bb6bcab5)
+        ;
+
+        
+    
+    
+            var marker_5f4a874fe5b3443d9df99b6482550be2 = L.marker(
+                [37.56079794, 126.8508314],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_23a4e8abc40649c6aa579f7a6497df47 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da7ffcad69cd411fad42fc10ee30b902 = $(`<div id="html_da7ffcad69cd411fad42fc10ee30b902" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>등촌7종합사회복지관</strong><br> 영업시간: 월-토 11:20-12:00 <br> 제공대상: 독거노인, 결식노인, 저소득층 노인<br> 주소: 서울특별시 강서구 공항대로 43길 104<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_23a4e8abc40649c6aa579f7a6497df47.setContent(html_da7ffcad69cd411fad42fc10ee30b902);
+        
+
+        marker_5f4a874fe5b3443d9df99b6482550be2.bindPopup(popup_23a4e8abc40649c6aa579f7a6497df47)
+        ;
+
+        
+    
+    
+            var marker_b259b26748a943a4912799746164acd4 = L.marker(
+                [37.56195043, 126.8502089],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_f3b860e33ace4cdbb1fdc481d97d3240 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e824ee56dc594721b8b509f15254b61b = $(`<div id="html_e824ee56dc594721b8b509f15254b61b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>등촌9종합사회복지관</strong><br> 영업시간: 월-토 11:00-12:00 <br> 제공대상: 독거노인, 결식노인, 저소득층 노인<br> 주소: 서울특별시 강서구 화곡로 63가길 92<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_f3b860e33ace4cdbb1fdc481d97d3240.setContent(html_e824ee56dc594721b8b509f15254b61b);
+        
+
+        marker_b259b26748a943a4912799746164acd4.bindPopup(popup_f3b860e33ace4cdbb1fdc481d97d3240)
+        ;
+
+        
+    
+    
+            var marker_6aa9880e9e3a46fa96d1cf7551adb3bf = L.marker(
+                [37.56593157, 126.8520708],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_9b10e51a8721489280fe065088b6a662 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5910f0cd5be54de4b79771cb44fb322b = $(`<div id="html_5910f0cd5be54de4b79771cb44fb322b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>가양4종합사회복지관</strong><br> 영업시간: 월-토 11:00-12:30 <br> 제공대상: 독거노인, 결식노인, 저소득층 노인<br> 주소: 서울특별시 강서구 양천로57길 37<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_9b10e51a8721489280fe065088b6a662.setContent(html_5910f0cd5be54de4b79771cb44fb322b);
+        
+
+        marker_6aa9880e9e3a46fa96d1cf7551adb3bf.bindPopup(popup_9b10e51a8721489280fe065088b6a662)
+        ;
+
+        
+    
+    
+            var marker_43e8d54100204a24880cc4aebc365f5c = L.marker(
+                [37.5642551, 126.8512878],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_5d7046c6d9044892b85b30602a84567f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb5934a3dbe94fd99e994fedd2059e3e = $(`<div id="html_bb5934a3dbe94fd99e994fedd2059e3e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>가양5종합사회복지관</strong><br> 영업시간: 월-토 11:30-12:30 <br> 제공대상: 독거노인, 결식노인, 저소득층 노인<br> 주소: 서울특별시 강서구 양천로57길 36<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_5d7046c6d9044892b85b30602a84567f.setContent(html_bb5934a3dbe94fd99e994fedd2059e3e);
+        
+
+        marker_43e8d54100204a24880cc4aebc365f5c.bindPopup(popup_5d7046c6d9044892b85b30602a84567f)
+        ;
+
+        
+    
+    
+            var marker_a739d621cc9545abb328f780b1e21126 = L.marker(
+                [37.56173727, 126.861591],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_2ee3b9f605bf4684a1099eababc20c43 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0bbdff75bff48ea9cfbc67c716d150b = $(`<div id="html_c0bbdff75bff48ea9cfbc67c716d150b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>가양7종합사회복지관</strong><br> 영업시간: 월-토 11:20-12:30 <br> 제공대상: 독거노인, 결식노인, 저소득층 노인<br> 주소: 서울특별시 강서구 허준로 209<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_2ee3b9f605bf4684a1099eababc20c43.setContent(html_c0bbdff75bff48ea9cfbc67c716d150b);
+        
+
+        marker_a739d621cc9545abb328f780b1e21126.bindPopup(popup_2ee3b9f605bf4684a1099eababc20c43)
+        ;
+
+        
+    
+    
+            var marker_dd64d740a6b8445d9b1164ea57e4b9e6 = L.marker(
+                [37.57424491, 126.8201677],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_42cc36876a3e430aa2584619faf1567d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43104d2b7b3b47e6bfe113f3a29444c1 = $(`<div id="html_43104d2b7b3b47e6bfe113f3a29444c1" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>방화2종합사회복지관</strong><br> 영업시간: 월-토 11:15-12:15 <br> 제공대상: 독거노인, 결식노인, 저소득층 노인<br> 주소: 서울특별시 강서구 방화대로 48길 40<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_42cc36876a3e430aa2584619faf1567d.setContent(html_43104d2b7b3b47e6bfe113f3a29444c1);
+        
+
+        marker_dd64d740a6b8445d9b1164ea57e4b9e6.bindPopup(popup_42cc36876a3e430aa2584619faf1567d)
+        ;
+
+        
+    
+    
+            var marker_6214351db9224fbaa3465410831692a6 = L.marker(
+                [37.57813762, 126.8112059],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_50b726c886d247a0af547cb6e8cf0d2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b0241a7e29242b89226613356d7a1c4 = $(`<div id="html_3b0241a7e29242b89226613356d7a1c4" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>방화6종합사회복지관</strong><br> 영업시간: 월-토 11:00-12:00 <br> 제공대상: 독거노인, 결식노인, 저소득층 노인<br> 주소: 서울특별시 강서구 금낭화로 23길 25<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_50b726c886d247a0af547cb6e8cf0d2d.setContent(html_3b0241a7e29242b89226613356d7a1c4);
+        
+
+        marker_6214351db9224fbaa3465410831692a6.bindPopup(popup_50b726c886d247a0af547cb6e8cf0d2d)
+        ;
+
+        
+    
+    
+            var marker_5815196afb8140b5a7d26eae4b11a0ba = L.marker(
+                [37.57071896, 126.8057278],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_e9edafda9ec14d93a679a0e43127854b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_179dba1c0b684f2292af66c0c497311e = $(`<div id="html_179dba1c0b684f2292af66c0c497311e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>방화11종합사회복지관</strong><br> 영업시간: 월-토 11:00-12:00 <br> 제공대상: 독거노인, 결식노인, 저소득층 노인<br> 주소: 서울특별시 강서구 개화동로21길 4<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_e9edafda9ec14d93a679a0e43127854b.setContent(html_179dba1c0b684f2292af66c0c497311e);
+        
+
+        marker_5815196afb8140b5a7d26eae4b11a0ba.bindPopup(popup_e9edafda9ec14d93a679a0e43127854b)
+        ;
+
+        
+    
+    
+            var marker_5c5c0e0b8a794238804544376cbca3f6 = L.marker(
+                [37.57071896, 126.8057278],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_ab0cb618172945f8897b10fd7445c30c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3d84b86686149cb805322469800e82d = $(`<div id="html_e3d84b86686149cb805322469800e82d" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>발산어르신행복센터</strong><br> 영업시간: 월-토 11:20-12:20 <br> 제공대상: 독거노인, 결식노인, 저소득층 노인<br> 주소: 서울특별시 강서구 개화동로21길 4<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_ab0cb618172945f8897b10fd7445c30c.setContent(html_e3d84b86686149cb805322469800e82d);
+        
+
+        marker_5c5c0e0b8a794238804544376cbca3f6.bindPopup(popup_ab0cb618172945f8897b10fd7445c30c)
+        ;
+
+        
+    
+    
+            var marker_85440889712d4cb0aee0a2d1446bfb71 = L.marker(
+                [37.55812319, 126.8475501],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_1cd60a4f52ed4afcab6347d6b5b2b6ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a53f275fd85b4771bdfce98bd1021265 = $(`<div id="html_a53f275fd85b4771bdfce98bd1021265" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>서울시립강서노인종합복지관</strong><br> 영업시간: 월-토 11:30-13:00 <br> 제공대상: 독거노인, 결식노인, 저소득층 노인<br> 주소: 서울특별시 강서구 화곡로61길 85<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_1cd60a4f52ed4afcab6347d6b5b2b6ef.setContent(html_a53f275fd85b4771bdfce98bd1021265);
+        
+
+        marker_85440889712d4cb0aee0a2d1446bfb71.bindPopup(popup_1cd60a4f52ed4afcab6347d6b5b2b6ef)
+        ;
+
+        
+    
+    
+            var marker_5806c08719f644729f3e041b055425fc = L.marker(
+                [37.54152453, 126.8514084],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_62da17fa3ced430a80a237d9ef976c6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_995b343851074b26b38470871873db6e = $(`<div id="html_995b343851074b26b38470871873db6e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>강서구립봉제산노인복지센터</strong><br> 영업시간: 월-토 11:30-12:30 <br> 제공대상: 독거노인, 결식노인, 저소득층 노인<br> 주소: 서울특별시 강서구 초록마을로 15길 12<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_62da17fa3ced430a80a237d9ef976c6b.setContent(html_995b343851074b26b38470871873db6e);
+        
+
+        marker_5806c08719f644729f3e041b055425fc.bindPopup(popup_62da17fa3ced430a80a237d9ef976c6b)
+        ;
+
+        
+    
+    
+            var marker_a2bce1ada8d646eba5a0224320d8ec15 = L.marker(
+                [37.5327772, 126.8471203],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_59b7c7cb72e84d8aaedd26645f165e5c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e36f8c479aa84e9c8f972d9ba36abae1 = $(`<div id="html_e36f8c479aa84e9c8f972d9ba36abae1" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>강서구립곰달래어르신복지센터</strong><br> 영업시간: 월-토 11:30-13:00 <br> 제공대상: 독거노인, 결식노인, 저소득층 노인<br> 주소: 서울특별시 강서구 강서로5길 50. 3층<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_59b7c7cb72e84d8aaedd26645f165e5c.setContent(html_e36f8c479aa84e9c8f972d9ba36abae1);
+        
+
+        marker_a2bce1ada8d646eba5a0224320d8ec15.bindPopup(popup_59b7c7cb72e84d8aaedd26645f165e5c)
+        ;
+
+        
+    
+    
+            var marker_dfbdf38351c04e71b79bf5329f32f2dd = L.marker(
+                [37.58724828, 127.0500258],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_e05ef35e5d1c4210a3f06cc8f8d6c1ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b38d69478a6a4b14815bc8bd8819ce12 = $(`<div id="html_b38d69478a6a4b14815bc8bd8819ce12" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>동대문노인종합복지관</strong><br> 영업시간: 월-토 11:30-13:00 <br> 제공대상: 저소득 어르신 급식지원사업 선정 대상자<br> 주소: 서울특별시 동대문구 제기로33길25(청량리동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_e05ef35e5d1c4210a3f06cc8f8d6c1ee.setContent(html_b38d69478a6a4b14815bc8bd8819ce12);
+        
+
+        marker_dfbdf38351c04e71b79bf5329f32f2dd.bindPopup(popup_e05ef35e5d1c4210a3f06cc8f8d6c1ee)
+        ;
+
+        
+    
+    
+            var marker_58f285c74ee048d79860416027a786ae = L.marker(
+                [37.56795185, 127.0661722],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_b0faefc1ed2b44088718ec49b005b93f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d6a9f8ada0541978bdfe82509e12864 = $(`<div id="html_0d6a9f8ada0541978bdfe82509e12864" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>장안종합사회복지관</strong><br> 영업시간: 월-금 11:30-12:30 <br> 제공대상: 저소득 어르신 급식지원사업 선정 대상자<br> 주소: 서울특별시 동대문구 한천로18길48(장안동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_b0faefc1ed2b44088718ec49b005b93f.setContent(html_0d6a9f8ada0541978bdfe82509e12864);
+        
+
+        marker_58f285c74ee048d79860416027a786ae.bindPopup(popup_b0faefc1ed2b44088718ec49b005b93f)
+        ;
+
+        
+    
+    
+            var marker_409a80baf6f94f3699328c1fc47bed2c = L.marker(
+                [37.57670362, 127.0455002],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_d65d2ba5feb54e0a85335b31f44af85e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf059a4422034cc088ed2a09119bf3cd = $(`<div id="html_bf059a4422034cc088ed2a09119bf3cd" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>다일복지재단</strong><br> 영업시간: 월-토 11:00-12:30 <br> 제공대상: 저소득 어르신 급식지원사업 선정 대상자<br> 주소: 서울특별시 동대문구 황물로 8(답십리동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_d65d2ba5feb54e0a85335b31f44af85e.setContent(html_bf059a4422034cc088ed2a09119bf3cd);
+        
+
+        marker_409a80baf6f94f3699328c1fc47bed2c.bindPopup(popup_d65d2ba5feb54e0a85335b31f44af85e)
+        ;
+
+        
+    
+    
+            var marker_ab461fe9c37f4e399b767f521c135db9 = L.marker(
+                [37.6386492, 127.0278887],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_cb7184bf7ea244968f37248c4959bb07 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b3e109cbf2c47e9b4613e178cd6ef0f = $(`<div id="html_0b3e109cbf2c47e9b4613e178cd6ef0f" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>서울특별시농아인협회강북구지부</strong><br> 영업시간: 월-토 12:00-13:00 <br> 제공대상: 기초생활수급자, 차상위 계층 및 저소득 독거어르신<br> 주소: 서울특별시 강북구 한천로 131길 7<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_cb7184bf7ea244968f37248c4959bb07.setContent(html_0b3e109cbf2c47e9b4613e178cd6ef0f);
+        
+
+        marker_ab461fe9c37f4e399b767f521c135db9.bindPopup(popup_cb7184bf7ea244968f37248c4959bb07)
+        ;
+
+        
+    
+    
+            var marker_628d3a85c2f546cd8d5480fd4109b01c = L.marker(
+                [37.643259, 127.023371],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_710ccf3f61d44dcda9ea66d7bca42473 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_268ebd20156741af830d9e8ea131a546 = $(`<div id="html_268ebd20156741af830d9e8ea131a546" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>e한우리 봉사회</strong><br> 영업시간: 월-토 12:00-13:00 <br> 제공대상: 기초생활수급자, 차상위 계층 및 저소득 독거어르신<br> 주소: 서울특별시 강북구 한천로 150길 12<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_710ccf3f61d44dcda9ea66d7bca42473.setContent(html_268ebd20156741af830d9e8ea131a546);
+        
+
+        marker_628d3a85c2f546cd8d5480fd4109b01c.bindPopup(popup_710ccf3f61d44dcda9ea66d7bca42473)
+        ;
+
+        
+    
+    
+            var marker_462affc30d8143d2ab51db682cf64951 = L.marker(
+                [37.48436167, 126.9480697],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_912d86c964a84fa898d5626a3bc3a76d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f6f3987bef24f73815fcf8deb329a98 = $(`<div id="html_9f6f3987bef24f73815fcf8deb329a98" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>관악노인종합복지관</strong><br> 영업시간: 월-토 평일11:20-12:40, 토 11:10-12:10 <br> 제공대상: 만 60세 이상 저소득 어르신<br> 주소: 서울특별시 관악구 봉천로 41길 33(중앙동 중앙사회복지관)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_912d86c964a84fa898d5626a3bc3a76d.setContent(html_9f6f3987bef24f73815fcf8deb329a98);
+        
+
+        marker_462affc30d8143d2ab51db682cf64951.bindPopup(popup_912d86c964a84fa898d5626a3bc3a76d)
+        ;
+
+        
+    
+    
+            var marker_eb8245803b8840e986b42d2e9c0a0e4b = L.marker(
+                [37.4648376, 126.9198595],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_359e570046a94b99a28991ab907c9834 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3087361cdb3f49b2aefbd962974c8335 = $(`<div id="html_3087361cdb3f49b2aefbd962974c8335" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>관악산무료급식소</strong><br> 영업시간: 월-금 10:30-12:00 <br> 제공대상: 만 70세 이상 저소득 어르신<br> 주소: 서울특별시 관악구 난곡로 110<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_359e570046a94b99a28991ab907c9834.setContent(html_3087361cdb3f49b2aefbd962974c8335);
+        
+
+        marker_eb8245803b8840e986b42d2e9c0a0e4b.bindPopup(popup_359e570046a94b99a28991ab907c9834)
+        ;
+
+        
+    
+    
+            var marker_275667ed9a4f4ea78abb52e25663bcff = L.marker(
+                [37.46678996, 126.9312404],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_16738c9751a440f48046a316f7b89662 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c25b630022841df812de1742379b460 = $(`<div id="html_9c25b630022841df812de1742379b460" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>서울YWCA봉천종합사회복지관</strong><br> 영업시간: 월-토 11:00-12:00 <br> 제공대상: 만 60세 이상 저소득 어르신<br> 주소: 서울특별시 관악구 신림동 호암로 549<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_16738c9751a440f48046a316f7b89662.setContent(html_9c25b630022841df812de1742379b460);
+        
+
+        marker_275667ed9a4f4ea78abb52e25663bcff.bindPopup(popup_16738c9751a440f48046a316f7b89662)
+        ;
+
+        
+    
+    
+            var marker_acd823891f0b486e81a2846b5bb6e098 = L.marker(
+                [37.491563, 126.945564],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_5db673c450bb440ebdf9f35c78593864 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ca4675866cf4aa4bff96efa290dd63b = $(`<div id="html_1ca4675866cf4aa4bff96efa290dd63b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>선의관악종합사회복지관</strong><br> 영업시간: 월-토 11:30-12:30 <br> 제공대상: 만 60세 이상 저소득 어르신<br> 주소: 서울특별시 관악구 양녕로 16길 44-9(봉천동 선의관악종합사회복지관)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_5db673c450bb440ebdf9f35c78593864.setContent(html_1ca4675866cf4aa4bff96efa290dd63b);
+        
+
+        marker_acd823891f0b486e81a2846b5bb6e098.bindPopup(popup_5db673c450bb440ebdf9f35c78593864)
+        ;
+
+        
+    
+    
+            var marker_f925ff6da897474ba89af18a01602977 = L.marker(
+                [37.48668511, 126.9575761],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_291e45fe93e04a5ca073815152a1806f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa0dd21ee8d74e75a4c0d30e34da4b13 = $(`<div id="html_fa0dd21ee8d74e75a4c0d30e34da4b13" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>성민종합사회복지관</strong><br> 영업시간: 월-토 11:15-12:00 <br> 제공대상: 만 60세 이상 저소득 어르신<br> 주소: 서울특별시 관악구 관악로 254(청림동 서울YWCA봉천종합사회복지관)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_291e45fe93e04a5ca073815152a1806f.setContent(html_fa0dd21ee8d74e75a4c0d30e34da4b13);
+        
+
+        marker_f925ff6da897474ba89af18a01602977.bindPopup(popup_291e45fe93e04a5ca073815152a1806f)
+        ;
+
+        
+    
+    
+            var marker_5ebf5c6080294ac88235fffb0ff132d0 = L.marker(
+                [37.464815, 126.919828],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_aac98d1ced2c412b83885fa96f4f5eb3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ece40ace711942f4abc2b2435ffb8f75 = $(`<div id="html_ece40ace711942f4abc2b2435ffb8f75" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>신림종합사회복지관</strong><br> 영업시간: 월-토 11:00-12:00 <br> 제공대상: 만 60세 이상 저소득 어르신<br> 주소: 서울특별시 관악구 대학동 210-4<br> 비고: 임시휴무  홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_aac98d1ced2c412b83885fa96f4f5eb3.setContent(html_ece40ace711942f4abc2b2435ffb8f75);
+        
+
+        marker_5ebf5c6080294ac88235fffb0ff132d0.bindPopup(popup_aac98d1ced2c412b83885fa96f4f5eb3)
+        ;
+
+        
+    
+    
+            var marker_3ee425470d8a4eacbb6f9b9ae4dccacb = L.marker(
+                [37.49304069, 126.9263301],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_5f8ecd604ecb4dde827f6a7be2f885bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_798b7474171041ae8a1190fcdacd626b = $(`<div id="html_798b7474171041ae8a1190fcdacd626b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>중앙사회복지관</strong><br> 영업시간: 월-토 11:00-13:00 <br> 제공대상: 만 60세 이상 저소득 어르신<br> 주소: 서울특별시 관악구 보라매로 35 (관악노인종합복지관)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_5f8ecd604ecb4dde827f6a7be2f885bf.setContent(html_798b7474171041ae8a1190fcdacd626b);
+        
+
+        marker_3ee425470d8a4eacbb6f9b9ae4dccacb.bindPopup(popup_5f8ecd604ecb4dde827f6a7be2f885bf)
+        ;
+
+        
+    
+    
+            var marker_d954a71cf8f54f7aaa0c919cb7085da1 = L.marker(
+                [37.59453836, 126.916808],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_d90646ad20a14be38be5c4bc535cfac4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_faf406304f6f43a1a8d623ce48a08ee5 = $(`<div id="html_faf406304f6f43a1a8d623ce48a08ee5" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>응암노인복지관</strong><br> 영업시간: 월-토 11:00-13:00 <br> 제공대상: 만 60세이상 저소득어르신<br> 주소: 서울특별시 은평구 응암로21가길5-1<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_d90646ad20a14be38be5c4bc535cfac4.setContent(html_faf406304f6f43a1a8d623ce48a08ee5);
+        
+
+        marker_d954a71cf8f54f7aaa0c919cb7085da1.bindPopup(popup_d90646ad20a14be38be5c4bc535cfac4)
+        ;
+
+        
+    
+    
+            var marker_77570fe8d49b497ca16cf6b59601a90d = L.marker(
+                [37.59035031, 126.908289],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_777521ecb28d4445b66b7f92b80e53ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29d8228305934a9d938fb449f2a4d7a4 = $(`<div id="html_29d8228305934a9d938fb449f2a4d7a4" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>신사노인복지관</strong><br> 영업시간: 월-토 11:00-13:00 <br> 제공대상: 만 60세이상 저소득어르신<br> 주소: 서울특별시 은평구 증산로15길47<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_777521ecb28d4445b66b7f92b80e53ea.setContent(html_29d8228305934a9d938fb449f2a4d7a4);
+        
+
+        marker_77570fe8d49b497ca16cf6b59601a90d.bindPopup(popup_777521ecb28d4445b66b7f92b80e53ea)
+        ;
+
+        
+    
+    
+            var marker_933df3efe87440228cb7f26d2e545d6a = L.marker(
+                [37.61941254, 126.9249009],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_0fc76a40bde74ec1b02d719aab2a1056 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b9a1a9872cd7459ba1d9ea90ca04e07f = $(`<div id="html_b9a1a9872cd7459ba1d9ea90ca04e07f" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>불광노인복지관</strong><br> 영업시간: 월-토 11:00-13:00 <br> 제공대상: 만 60세이상 저소득어르신<br> 주소: 서울특별시 은평구 연서로32길17-11<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_0fc76a40bde74ec1b02d719aab2a1056.setContent(html_b9a1a9872cd7459ba1d9ea90ca04e07f);
+        
+
+        marker_933df3efe87440228cb7f26d2e545d6a.bindPopup(popup_0fc76a40bde74ec1b02d719aab2a1056)
+        ;
+
+        
+    
+    
+            var marker_5b21a4ef90bf4622bd599b42c7ee0528 = L.marker(
+                [37.61345215, 126.9220484],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_f5e5cb4a9f65498ab420b07a23d37c08 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14a1e3dc06bf43779925c3f8ccacc7b7 = $(`<div id="html_14a1e3dc06bf43779925c3f8ccacc7b7" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>대조노인복지관</strong><br> 영업시간: 월-토 11:00-13:00 <br> 제공대상: 만 60세이상 저소득어르신<br> 주소: 서울특별시 은평구 역말로9길 27<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_f5e5cb4a9f65498ab420b07a23d37c08.setContent(html_14a1e3dc06bf43779925c3f8ccacc7b7);
+        
+
+        marker_5b21a4ef90bf4622bd599b42c7ee0528.bindPopup(popup_f5e5cb4a9f65498ab420b07a23d37c08)
+        ;
+
+        
+    
+    
+            var marker_cf0016aad80c4c64ab0343abfc38b800 = L.marker(
+                [37.59815825, 126.9121456],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_63fcf0e793a14922bcb782d083abe1e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af46c0ca2f9048ef86f6076efdf35fa6 = $(`<div id="html_af46c0ca2f9048ef86f6076efdf35fa6" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>신사종합사회복지관</strong><br> 영업시간: 월-토 11:00-13:00 <br> 제공대상: 만 60세이상 저소득어르신<br> 주소: 서울특별시 은평구 은평로38<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_63fcf0e793a14922bcb782d083abe1e9.setContent(html_af46c0ca2f9048ef86f6076efdf35fa6);
+        
+
+        marker_cf0016aad80c4c64ab0343abfc38b800.bindPopup(popup_63fcf0e793a14922bcb782d083abe1e9)
+        ;
+
+        
+    
+    
+            var marker_7fd52fd4978d441aaf06455c77cc9dae = L.marker(
+                [37.60254229, 126.9318785],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_34fbf9712f7c437c94b5f30253e660e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1389ba4e3e1c4dc2b1e8123de6b09120 = $(`<div id="html_1389ba4e3e1c4dc2b1e8123de6b09120" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>녹번종합사회복지관</strong><br> 영업시간: 월-토 11:00-13:00 <br> 제공대상: 만 60세이상 저소득어르신<br> 주소: 서울특별시 은평구 은평로21길14-26<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_34fbf9712f7c437c94b5f30253e660e3.setContent(html_1389ba4e3e1c4dc2b1e8123de6b09120);
+        
+
+        marker_7fd52fd4978d441aaf06455c77cc9dae.bindPopup(popup_34fbf9712f7c437c94b5f30253e660e3)
+        ;
+
+        
+    
+    
+            var marker_d46938e5cc604103ae2a98f591605cf1 = L.marker(
+                [37.58510959, 126.8992597],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_d12311e0882a4e8d86484a9611195b59 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6aa5662f45946f99c2fd351d639e579 = $(`<div id="html_b6aa5662f45946f99c2fd351d639e579" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>은평종합사회복지관</strong><br> 영업시간: 월-토 11:00-13:00 <br> 제공대상: 만 60세이상 저소득어르신<br> 주소: 서울특별시 은평구 은평터널로48<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_d12311e0882a4e8d86484a9611195b59.setContent(html_b6aa5662f45946f99c2fd351d639e579);
+        
+
+        marker_d46938e5cc604103ae2a98f591605cf1.bindPopup(popup_d12311e0882a4e8d86484a9611195b59)
+        ;
+
+        
+    
+    
+            var marker_655f7a6d797e4c33b37e0a011134b77b = L.marker(
+                [37.4932077, 126.8596492],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_9eefffb1bd1b405ca1ab793d0528d270 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_041ae3bad5b14f428db261b147c68384 = $(`<div id="html_041ae3bad5b14f428db261b147c68384" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>개웅교회</strong><br> 영업시간: 화,일 11:30-12:30 <br> 제공대상: 노숙자  노인<br> 주소: 서울특별시 구로구 개봉로20길 91-10<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_9eefffb1bd1b405ca1ab793d0528d270.setContent(html_041ae3bad5b14f428db261b147c68384);
+        
+
+        marker_655f7a6d797e4c33b37e0a011134b77b.bindPopup(popup_9eefffb1bd1b405ca1ab793d0528d270)
+        ;
+
+        
+    
+    
+            var marker_b910548adf3b49cb833407494ec26bc4 = L.marker(
+                [37.4786745, 126.8959086],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_1fca887c023e45faa4342b178fb7b458 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63945814cea645c6b728e28a29acbb69 = $(`<div id="html_63945814cea645c6b728e28a29acbb69" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>중국동포의집</strong><br> 영업시간: 월-일 12:00-13:00 <br> 제공대상: 외국인  노인<br> 주소: 서울특별시 구로구 남부순환로 1307<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_1fca887c023e45faa4342b178fb7b458.setContent(html_63945814cea645c6b728e28a29acbb69);
+        
+
+        marker_b910548adf3b49cb833407494ec26bc4.bindPopup(popup_1fca887c023e45faa4342b178fb7b458)
+        ;
+
+        
+    
+    
+            var marker_25b3786eb83f4194bab78c31e96ab7ac = L.marker(
+                [37.4807875, 126.8898175],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_2531147aab3a4275ae643e2274ad3fa4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c46738aa3137497dab78a0241630ab74 = $(`<div id="html_c46738aa3137497dab78a0241630ab74" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>한국지체장애인협회 구로구지회</strong><br> 영업시간: 화,목 11:00-11:30 <br> 제공대상: 장애인 노인<br> 주소: 서울특별시 구로구 디지털로19길 24<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_2531147aab3a4275ae643e2274ad3fa4.setContent(html_c46738aa3137497dab78a0241630ab74);
+        
+
+        marker_25b3786eb83f4194bab78c31e96ab7ac.bindPopup(popup_2531147aab3a4275ae643e2274ad3fa4)
+        ;
+
+        
+    
+    
+            var marker_dbb53079bda449469196440ef09f52af = L.marker(
+                [37.4961766, 126.8561317],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_cf69933b5c93435c8a702a6cb5185b60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51e8c115f7ef4db7bfb9112a85a497c0 = $(`<div id="html_51e8c115f7ef4db7bfb9112a85a497c0" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>한국장애인문화인쇄협회</strong><br> 영업시간: 월-금 12:00-13:00 <br> 제공대상: 지역장애인 노약자<br> 주소: 서울특별시 구로구 개봉로23길 10<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_cf69933b5c93435c8a702a6cb5185b60.setContent(html_51e8c115f7ef4db7bfb9112a85a497c0);
+        
+
+        marker_dbb53079bda449469196440ef09f52af.bindPopup(popup_cf69933b5c93435c8a702a6cb5185b60)
+        ;
+
+        
+    
+    
+            var marker_84cf7b0ce8c0465d8eae29a88e71a6a2 = L.marker(
+                [37.4829857, 126.8891741],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_a2c4e78569464a10bddf9cc892494dd1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c338c0b5ba84f6aa34e9c2b446a8fa4 = $(`<div id="html_6c338c0b5ba84f6aa34e9c2b446a8fa4" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>보훈경로당</strong><br> 영업시간: 월-금 12:00-13:00 <br> 제공대상: 노인 국가유공자<br> 주소: 서울특별시 구로구 우마1다길 25, 1층<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_a2c4e78569464a10bddf9cc892494dd1.setContent(html_6c338c0b5ba84f6aa34e9c2b446a8fa4);
+        
+
+        marker_84cf7b0ce8c0465d8eae29a88e71a6a2.bindPopup(popup_a2c4e78569464a10bddf9cc892494dd1)
+        ;
+
+        
+    
+    
+            var marker_1eb278be77b54d70a0a78f0cd82467b3 = L.marker(
+                [37.5953432, 127.0192109],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_0ab21a962622487f95fa965706de6833 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c629be22981c4851968f5a81a0e51e80 = $(`<div id="html_c629be22981c4851968f5a81a0e51e80" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>성북시각장애인복지관</strong><br> 영업시간: 월-금 11:30- <br> 제공대상: 60세이상 저소득어르신<br> 주소: 서울특별시 성북구 동소문로25가길 20<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_0ab21a962622487f95fa965706de6833.setContent(html_c629be22981c4851968f5a81a0e51e80);
+        
+
+        marker_1eb278be77b54d70a0a78f0cd82467b3.bindPopup(popup_0ab21a962622487f95fa965706de6833)
+        ;
+
+        
+    
+    
+            var marker_b50fed84db94408cabab36d290178a2f = L.marker(
+                [37.6089065, 127.0375144],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_28ac482ff3d949f4ba33ce19a94eedcb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f553c813864341268905f57fbbb76ad6 = $(`<div id="html_f553c813864341268905f57fbbb76ad6" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>월곡종합사회복지관</strong><br> 영업시간: 월-금 11:20- <br> 제공대상: 60세이상 저소득어르신<br> 주소: 서울특별시 성북구 오패산로16길 23<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_28ac482ff3d949f4ba33ce19a94eedcb.setContent(html_f553c813864341268905f57fbbb76ad6);
+        
+
+        marker_b50fed84db94408cabab36d290178a2f.bindPopup(popup_28ac482ff3d949f4ba33ce19a94eedcb)
+        ;
+
+        
+    
+    
+            var marker_f9d2515ba9e144b482f5b88f73c5b471 = L.marker(
+                [37.6041995, 127.0370454],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_e3ab327938fe48c6a884a5548afa3ec1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e0bfb3ba8e9496eb3baf589cca9bd06 = $(`<div id="html_9e0bfb3ba8e9496eb3baf589cca9bd06" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>생명의전화종합사회복지관</strong><br> 영업시간: 월-금 10:00- <br> 제공대상: 60세이상 저소득어르신<br> 주소: 서울특별시 성북구 오패산로 21<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_e3ab327938fe48c6a884a5548afa3ec1.setContent(html_9e0bfb3ba8e9496eb3baf589cca9bd06);
+        
+
+        marker_f9d2515ba9e144b482f5b88f73c5b471.bindPopup(popup_e3ab327938fe48c6a884a5548afa3ec1)
+        ;
+
+        
+    
+    
+            var marker_f582370a6c9a478aa1c8febb34da35a5 = L.marker(
+                [37.61070518, 127.0605064],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_8e2186ff60a9405f8b54d88a077ed869 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3023a4fdbfd04c7c8c65a6a5d9647669 = $(`<div id="html_3023a4fdbfd04c7c8c65a6a5d9647669" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>장위종합사회복지관</strong><br> 영업시간: 월-금 11:00- <br> 제공대상: 60세이상 저소득어르신<br> 주소: 서울특별시 성북구 돌곶이로22길 47<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_8e2186ff60a9405f8b54d88a077ed869.setContent(html_3023a4fdbfd04c7c8c65a6a5d9647669);
+        
+
+        marker_f582370a6c9a478aa1c8febb34da35a5.bindPopup(popup_8e2186ff60a9405f8b54d88a077ed869)
+        ;
+
+        
+    
+    
+            var marker_37fc528b6a9443b8bc319ad5bbfd8e72 = L.marker(
+                [37.61120361, 127.0012095],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_3f1260e33dea4ead9b67907561c07a9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42188e45003c49579261d61243d6e85d = $(`<div id="html_42188e45003c49579261d61243d6e85d" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>정릉종합사회복지관</strong><br> 영업시간: 월-금 11:30- <br> 제공대상: 60세이상 저소득어르신<br> 주소: 서울특별시 성북구 솔샘로5길 92<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_3f1260e33dea4ead9b67907561c07a9d.setContent(html_42188e45003c49579261d61243d6e85d);
+        
+
+        marker_37fc528b6a9443b8bc319ad5bbfd8e72.bindPopup(popup_3f1260e33dea4ead9b67907561c07a9d)
+        ;
+
+        
+    
+    
+            var marker_703c964e74204bbcbaa3374cf0a42d8b = L.marker(
+                [37.60672761, 127.0267919],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_7d14d234e38942faad06d397ffc378d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7a7282dede54f9c985927137d6c8ae7 = $(`<div id="html_b7a7282dede54f9c985927137d6c8ae7" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>길음종합사회복지관</strong><br> 영업시간: 월-금 11:00- <br> 제공대상: 60세이상 저소득어르신<br> 주소: 서울특별시 성북구 삼양로2길 55<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_7d14d234e38942faad06d397ffc378d2.setContent(html_b7a7282dede54f9c985927137d6c8ae7);
+        
+
+        marker_703c964e74204bbcbaa3374cf0a42d8b.bindPopup(popup_7d14d234e38942faad06d397ffc378d2)
+        ;
+
+        
+    
+    
+            var marker_22bc4940dfec4188a4cdd07fc2e6f011 = L.marker(
+                [37.59779187, 127.0344106],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_e393ef04f87f4196852e3efb5a0db71c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bcac2bce5eb4fde979e10078e68d364 = $(`<div id="html_7bcac2bce5eb4fde979e10078e68d364" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>성북노인종합복지관</strong><br> 영업시간: 월-금 11:30- <br> 제공대상: 60세이상 저소득어르신<br> 주소: 서울특별시 성북구 종암로15길 10<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_e393ef04f87f4196852e3efb5a0db71c.setContent(html_7bcac2bce5eb4fde979e10078e68d364);
+        
+
+        marker_22bc4940dfec4188a4cdd07fc2e6f011.bindPopup(popup_e393ef04f87f4196852e3efb5a0db71c)
+        ;
+
+        
+    
+    
+            var marker_7cd3fa1d361b43ac88d8fc5bfa6eb86c = L.marker(
+                [37.63201412, 126.9308177],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_d896f452d9544910870c7ab684141669 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c78c7a0a143441bca83233a65b445433 = $(`<div id="html_c78c7a0a143441bca83233a65b445433" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>은평노인종합복지관</strong><br> 영업시간: 월-토 11:00-13:00 <br> 제공대상: 만 60세이상 저소득어르신<br> 주소: 서울특별시 은평구 연서로 415<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_d896f452d9544910870c7ab684141669.setContent(html_c78c7a0a143441bca83233a65b445433);
+        
+
+        marker_7cd3fa1d361b43ac88d8fc5bfa6eb86c.bindPopup(popup_d896f452d9544910870c7ab684141669)
+        ;
+
+        
+    
+    
+            var marker_c3275abc1cbf4c57837735e4b31d797f = L.marker(
+                [37.60326215, 126.911323],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_ace09ab23ab748c2acb5003a9bcbe9bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e43a042283f44ff6a2400c8b9ee6f351 = $(`<div id="html_e43a042283f44ff6a2400c8b9ee6f351" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>역촌노인복지관</strong><br> 영업시간: 월-토 11:00-13:00 <br> 제공대상: 만 60세이상 저소득어르신<br> 주소: 서울특별시 은평구 연서로3나길11-30<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_ace09ab23ab748c2acb5003a9bcbe9bb.setContent(html_e43a042283f44ff6a2400c8b9ee6f351);
+        
+
+        marker_c3275abc1cbf4c57837735e4b31d797f.bindPopup(popup_ace09ab23ab748c2acb5003a9bcbe9bb)
+        ;
+
+        
+    
+    
+            var marker_c44fb795864f4d27aefa45882a8065a6 = L.marker(
+                [37.55206991, 126.9720746],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_89ad1dfd07964cb6a86c9cb76b34b451 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ba979d2ac234db7bf6ec74fb15948b4 = $(`<div id="html_8ba979d2ac234db7bf6ec74fb15948b4" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>따스한채움터</strong><br> 영업시간: 월-일 08:00-10:00, 12:00-14:00, 17:00-19:00 <br> 제공대상: 노숙인 및 주거취약계층<br> 주소: 서울특별시 용산구 한강대로 377<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_89ad1dfd07964cb6a86c9cb76b34b451.setContent(html_8ba979d2ac234db7bf6ec74fb15948b4);
+        
+
+        marker_c44fb795864f4d27aefa45882a8065a6.bindPopup(popup_89ad1dfd07964cb6a86c9cb76b34b451)
+        ;
+
+        
+    
+    
+            var marker_9350119a61b9409696c418e9341e1344 = L.marker(
+                [37.55152257, 126.974148],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_5f4ba83fac3a421293f0afc582cf4ac0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d07973f28cea4c468da5df1737515d41 = $(`<div id="html_d07973f28cea4c468da5df1737515d41" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>인정만나샘</strong><br> 영업시간: 월-일 12:00-13:00, 18:00-19:00 <br> 제공대상: 노숙인<br> 주소: 서울특별시 용산구 후암로 57길45<br> 비고: 월-금 중식/월-일 석식  홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_5f4ba83fac3a421293f0afc582cf4ac0.setContent(html_d07973f28cea4c468da5df1737515d41);
+        
+
+        marker_9350119a61b9409696c418e9341e1344.bindPopup(popup_5f4ba83fac3a421293f0afc582cf4ac0)
+        ;
+
+        
+    
+    
+            var marker_30a00c374e3949b182c95519352ff795 = L.marker(
+                [37.557641, 126.9688033],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_b9eda5b457454d5794d547d3895fe3da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b50a1f3444ef483485bcbc62e7968a50 = $(`<div id="html_b50a1f3444ef483485bcbc62e7968a50" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>참좋은친구들</strong><br> 영업시간: 화,수,목,금,일 06:00,11:00,18:30 <br> 제공대상: 노숙인<br> 주소: 서울특별시 중구 청파로427<br> 비고: 화,일 중식,석식/수,목,금 조식,중식,석식  홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_b9eda5b457454d5794d547d3895fe3da.setContent(html_b50a1f3444ef483485bcbc62e7968a50);
+        
+
+        marker_30a00c374e3949b182c95519352ff795.bindPopup(popup_b9eda5b457454d5794d547d3895fe3da)
+        ;
+
+        
+    
+    
+            var marker_4e151bc34da34db08dafde0930129ad9 = L.marker(
+                [37.55763384, 126.9668708],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_75be40213b49476a87e6bcc708ac290a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc76da9676aa4e929e48602f0c632f64 = $(`<div id="html_dc76da9676aa4e929e48602f0c632f64" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>소중한사람들</strong><br> 영업시간: 월-일 11:30-12:30 <br> 제공대상: 노숙인<br> 주소: 서울특별시 중구 중림로 8길 12<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_75be40213b49476a87e6bcc708ac290a.setContent(html_dc76da9676aa4e929e48602f0c632f64);
+        
+
+        marker_4e151bc34da34db08dafde0930129ad9.bindPopup(popup_75be40213b49476a87e6bcc708ac290a)
+        ;
+
+        
+    
+    
+            var marker_1518c32c1c724fab8d2b49f1cd5f0997 = L.marker(
+                [37.6448368, 127.0454579],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_48dcff5db7cf4dbe8862d9d7e682199a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54af83f094724d959c4032d35f9a6cd6 = $(`<div id="html_54af83f094724d959c4032d35f9a6cd6" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>창동종합사회복지관</strong><br> 영업시간: 월-토 12:00-13:00 <br> 제공대상: 만 60세 이상 결식우려 어르신<br> 주소: 서울특별시 도봉구 덕릉로 329<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_48dcff5db7cf4dbe8862d9d7e682199a.setContent(html_54af83f094724d959c4032d35f9a6cd6);
+        
+
+        marker_1518c32c1c724fab8d2b49f1cd5f0997.bindPopup(popup_48dcff5db7cf4dbe8862d9d7e682199a)
+        ;
+
+        
+    
+    
+            var marker_fc886cac494d471cbfc15a1adbda395b = L.marker(
+                [37.6696229, 127.0465415],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_1b4437c613ee417da2cba3016849bdd0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b34b9e7b3d7643c6bf75120e0a9164eb = $(`<div id="html_b34b9e7b3d7643c6bf75120e0a9164eb" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>도봉서원종합사회복지관</strong><br> 영업시간: 월-토 12:00-13:00 <br> 제공대상: 만 60세 이상 결식우려 어르신<br> 주소: 서울특별시 도봉구 마들로 668<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_1b4437c613ee417da2cba3016849bdd0.setContent(html_b34b9e7b3d7643c6bf75120e0a9164eb);
+        
+
+        marker_fc886cac494d471cbfc15a1adbda395b.bindPopup(popup_1b4437c613ee417da2cba3016849bdd0)
+        ;
+
+        
+    
+    
+            var marker_ec80dbd0392c4c5f81ed56768bcc44ef = L.marker(
+                [37.6366719, 127.0413702],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_e719c1c96f9e41cabba7cb7ee240efe2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f745dbaa853f4925ba2451862fe38dbb = $(`<div id="html_f745dbaa853f4925ba2451862fe38dbb" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>창동노인복지센터</strong><br> 영업시간: 월-토 12:00-13:00 <br> 제공대상: 만 60세 이상 결식우려 어르신<br> 주소: 서울특별시 도봉구 덕릉로60차길 6<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_e719c1c96f9e41cabba7cb7ee240efe2.setContent(html_f745dbaa853f4925ba2451862fe38dbb);
+        
+
+        marker_ec80dbd0392c4c5f81ed56768bcc44ef.bindPopup(popup_e719c1c96f9e41cabba7cb7ee240efe2)
+        ;
+
+        
+    
+    
+            var marker_dbbfed6ceb2c4c98a39b281b8d3f5ee2 = L.marker(
+                [37.6705376, 127.0321759],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_8caa76efcd374929842383af0aa133e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6abea1a10c8443789e42d72d32111d81 = $(`<div id="html_6abea1a10c8443789e42d72d32111d81" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>방학동노인복지센터</strong><br> 영업시간: 월-토 12:00-13:00 <br> 제공대상: 만 60세 이상 결식우려 어르신<br> 주소: 서울특별시 도봉구 시루봉로15라길 59-9<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_8caa76efcd374929842383af0aa133e5.setContent(html_6abea1a10c8443789e42d72d32111d81);
+        
+
+        marker_dbbfed6ceb2c4c98a39b281b8d3f5ee2.bindPopup(popup_8caa76efcd374929842383af0aa133e5)
+        ;
+
+        
+    
+    
+            var marker_1aca470fe34544af919a43cbb49002e8 = L.marker(
+                [37.57073007, 127.0341592],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_53c9325748674accb350f7a37fa58cf4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89e94e7a02174efaafa282841c036b12 = $(`<div id="html_89e94e7a02174efaafa282841c036b12" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>성동장애인무료급식소</strong><br> 영업시간: 월-금 11:00-13:00 <br> 제공대상: 저소득 장애인<br> 주소: 서울특별시 성동구 청계천로 516<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_53c9325748674accb350f7a37fa58cf4.setContent(html_89e94e7a02174efaafa282841c036b12);
+        
+
+        marker_1aca470fe34544af919a43cbb49002e8.bindPopup(popup_53c9325748674accb350f7a37fa58cf4)
+        ;
+
+        
+    
+    
+            var marker_39fa02678247464a9dfd314a922dcf6e = L.marker(
+                [37.57022175, 127.0334425],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_89a1fe87883946f3a72373c8b1366d7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9cfa68b516a4c5a9d45f07cb1bc3a3f = $(`<div id="html_c9cfa68b516a4c5a9d45f07cb1bc3a3f" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>성동종합사회복지관</strong><br> 영업시간: 월-금 11:00-13:00 <br> 제공대상: 60세이상 저소득 노인<br> 주소: 서울특별시 성동구 청계천로 506<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_89a1fe87883946f3a72373c8b1366d7c.setContent(html_c9cfa68b516a4c5a9d45f07cb1bc3a3f);
+        
+
+        marker_39fa02678247464a9dfd314a922dcf6e.bindPopup(popup_89a1fe87883946f3a72373c8b1366d7c)
+        ;
+
+        
+    
+    
+            var marker_49eea4cf6c7b48578427a48b85232e25 = L.marker(
+                [37.54542883, 127.0469481],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_0666e847c45d4b82b1993faf60745a2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_207332d4356e4bdd9afe83f05fc0aca1 = $(`<div id="html_207332d4356e4bdd9afe83f05fc0aca1" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>성수종합사회복지관</strong><br> 영업시간: 월-토 11:00-12:00 <br> 제공대상: 60세이상 저소득 노인<br> 주소: 서울특별시 성동구 뚝섬로1길 43<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_0666e847c45d4b82b1993faf60745a2d.setContent(html_207332d4356e4bdd9afe83f05fc0aca1);
+        
+
+        marker_49eea4cf6c7b48578427a48b85232e25.bindPopup(popup_0666e847c45d4b82b1993faf60745a2d)
+        ;
+
+        
+    
+    
+            var marker_c10224fee1d04c7e96c6380da619e48e = L.marker(
+                [37.540433, 127.012782],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_7536fd49a2ff4634a12e37891a03ab34 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a45f8fc531543ab9271aa93b816feef = $(`<div id="html_9a45f8fc531543ab9271aa93b816feef" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>옥수종합사회복지관</strong><br> 영업시간: 월-금 11:00-13:00 <br> 제공대상: 60세이상 저소득 노인<br> 주소: 서울특별시 성동구 한림말길 16-5<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_7536fd49a2ff4634a12e37891a03ab34.setContent(html_9a45f8fc531543ab9271aa93b816feef);
+        
+
+        marker_c10224fee1d04c7e96c6380da619e48e.bindPopup(popup_7536fd49a2ff4634a12e37891a03ab34)
+        ;
+
+        
+    
+    
+            var marker_89fe404b51fa4b6bb35e83f22d3c4580 = L.marker(
+                [37.54569095, 126.9725568],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_90fb582cb54b4feebec5f8919f8944e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8291a2ab61f04ba3b80ec7fd1a8f2b1b = $(`<div id="html_8291a2ab61f04ba3b80ec7fd1a8f2b1b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>다시서기종합지원센터</strong><br> 영업시간: 월-일 18:30-19:30 <br> 제공대상: 노숙인<br> 주소: 서울특별시 용산구 한강대로 92길 6<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_90fb582cb54b4feebec5f8919f8944e5.setContent(html_8291a2ab61f04ba3b80ec7fd1a8f2b1b);
+        
+
+        marker_89fe404b51fa4b6bb35e83f22d3c4580.bindPopup(popup_90fb582cb54b4feebec5f8919f8944e5)
+        ;
+
+        
+    
+    
+            var marker_eb5a09e6323640a8b6d80a82d234bec8 = L.marker(
+                [37.6820824, 127.0435512],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_6d14a43b98fc48eb907a04d372e23978 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_edb4386e45f44c53885ef31f0b39976e = $(`<div id="html_edb4386e45f44c53885ef31f0b39976e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>도봉동노인복지센터</strong><br> 영업시간: 월-토 12:00-13:00 <br> 제공대상: 만 60세 이상 결식우려 어르신<br> 주소: 서울특별시 도봉구 도봉로169가길 52<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_6d14a43b98fc48eb907a04d372e23978.setContent(html_edb4386e45f44c53885ef31f0b39976e);
+        
+
+        marker_eb5a09e6323640a8b6d80a82d234bec8.bindPopup(popup_6d14a43b98fc48eb907a04d372e23978)
+        ;
+
+        
+    
+    
+            var marker_271d1590b1af4363a1b8f443c6ef7390 = L.marker(
+                [37.6482087, 127.0238013],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_82678e19ab1a43be9f73ec20a268cade = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bde090b9c4d243bdbec1b19370946689 = $(`<div id="html_bde090b9c4d243bdbec1b19370946689" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>쌍문동노인복지센터</strong><br> 영업시간: 월-토 12:00-13:00 <br> 제공대상: 만 60세 이상 결식우려 어르신<br> 주소: 서울특별시 도봉구 우이천로 363<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_82678e19ab1a43be9f73ec20a268cade.setContent(html_bde090b9c4d243bdbec1b19370946689);
+        
+
+        marker_271d1590b1af4363a1b8f443c6ef7390.bindPopup(popup_82678e19ab1a43be9f73ec20a268cade)
+        ;
+
+        
+    
+    
+            var marker_5e86e9ba78fd492d85609b5057a20b1b = L.marker(
+                [37.6588797, 127.0359721],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_91b02703c0c043c184661e9fa038f269 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94e658f6abb54d928c50a5046e553c27 = $(`<div id="html_94e658f6abb54d928c50a5046e553c27" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>도봉노인종합복지관</strong><br> 영업시간: 월-토 12:00-13:00 <br> 제공대상: 만 60세 이상 결식우려 어르신<br> 주소: 서울특별시 도봉구 도당로2길 12-13<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_91b02703c0c043c184661e9fa038f269.setContent(html_94e658f6abb54d928c50a5046e553c27);
+        
+
+        marker_5e86e9ba78fd492d85609b5057a20b1b.bindPopup(popup_91b02703c0c043c184661e9fa038f269)
+        ;
+
+        
+    
+    
+            var marker_36d69f279aa74efd976c34d4020f5806 = L.marker(
+                [37.5539134, 126.9451634],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_36a8dfd62958408dad8c228b8a75b689 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fed2a1bb6ec47fc9122349d06a561e0 = $(`<div id="html_0fed2a1bb6ec47fc9122349d06a561e0" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>신생명나무교회</strong><br> 영업시간: 월-금 11:30-13:00 <br> 제공대상: 수급자,차상위,기타저소득(경로식당<br> 주소: 서울특별시 마포구 고산18길 10<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_36a8dfd62958408dad8c228b8a75b689.setContent(html_0fed2a1bb6ec47fc9122349d06a561e0);
+        
+
+        marker_36d69f279aa74efd976c34d4020f5806.bindPopup(popup_36a8dfd62958408dad8c228b8a75b689)
+        ;
+
+        
+    
+    
+            var marker_34cf2766768a4e43b4c471478956bc53 = L.marker(
+                [37.515306, 126.9050411],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_a63cafdc0d5e48328fde2486a0ed70f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84eeee67af9040b78a53eb0dcc22d961 = $(`<div id="html_84eeee67af9040b78a53eb0dcc22d961" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>요셉의원</strong><br> 영업시간: 목 14:30-17:00 <br> 제공대상: 노숙인<br> 주소: 서울특별시 영등포구 경인로100길 6<br> 비고: 코로나19로중단  홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_a63cafdc0d5e48328fde2486a0ed70f8.setContent(html_84eeee67af9040b78a53eb0dcc22d961);
+        
+
+        marker_34cf2766768a4e43b4c471478956bc53.bindPopup(popup_a63cafdc0d5e48328fde2486a0ed70f8)
+        ;
+
+        
+    
+    
+            var marker_4b08d3dd64c24ffd9002ee4aca2644b2 = L.marker(
+                [37.5122132, 126.909252],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_761afcd660934146b2513664dcf7e17f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0a1409c320541ea8770c0cabfee1d0f = $(`<div id="html_d0a1409c320541ea8770c0cabfee1d0f" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>영광교회</strong><br> 영업시간: 수,목,금,일 06:30-07:30 <br> 제공대상: 노숙인<br> 주소: 서울특별시 영등포구 영신로 7<br> 비고: 코로나19로중단  홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_761afcd660934146b2513664dcf7e17f.setContent(html_d0a1409c320541ea8770c0cabfee1d0f);
+        
+
+        marker_4b08d3dd64c24ffd9002ee4aca2644b2.bindPopup(popup_761afcd660934146b2513664dcf7e17f)
+        ;
+
+        
+    
+    
+            var marker_ebd387538dd14de8bb10bc8cd42df38b = L.marker(
+                [37.51379932, 126.910905],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_bbb40bd7b86e49649337e0dd6b11b411 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_002d549c01764219aa2ace2bf656eade = $(`<div id="html_002d549c01764219aa2ace2bf656eade" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>한국기독교복지협회</strong><br> 영업시간: 월-토 20:00-21:00 <br> 제공대상: 노숙인<br> 주소: 서울특별시 영등포구 신길로 245<br> 비고: 코로나19로중단  홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_bbb40bd7b86e49649337e0dd6b11b411.setContent(html_002d549c01764219aa2ace2bf656eade);
+        
+
+        marker_ebd387538dd14de8bb10bc8cd42df38b.bindPopup(popup_bbb40bd7b86e49649337e0dd6b11b411)
+        ;
+
+        
+    
+    
+            var marker_6007c361a50a48309d7af3aeeb18decd = L.marker(
+                [37.515416, 126.9052536],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_03d9895e7ea24aafbf826b96aa2e02ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_159b979a740d4f2a970c316665d0fa6b = $(`<div id="html_159b979a740d4f2a970c316665d0fa6b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>광야교회</strong><br> 영업시간: 월-일 12:00-13:00, 18:00-19:00, 19:30-20:20 <br> 제공대상: 노숙인<br> 주소: 서울특별시 영등포구 경인로100길 3<br> 비고: 코로나19로간편식제공  홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_03d9895e7ea24aafbf826b96aa2e02ce.setContent(html_159b979a740d4f2a970c316665d0fa6b);
+        
+
+        marker_6007c361a50a48309d7af3aeeb18decd.bindPopup(popup_03d9895e7ea24aafbf826b96aa2e02ce)
+        ;
+
+        
+    
+    
+            var marker_d1d096932efd471c997db91da1e93036 = L.marker(
+                [37.515611, 126.9050503],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_1f9e36c665724f09990f156795b5735c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f13979e692d476a86e5475c9397ede7 = $(`<div id="html_8f13979e692d476a86e5475c9397ede7" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>토마스의집</strong><br> 영업시간: 월-금 11:40-14:30 <br> 제공대상: 노숙인<br> 주소: 서울특별시 영등포구 경인로 828-1<br> 비고: 코로나19로간편식제공  홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_1f9e36c665724f09990f156795b5735c.setContent(html_8f13979e692d476a86e5475c9397ede7);
+        
+
+        marker_d1d096932efd471c997db91da1e93036.bindPopup(popup_1f9e36c665724f09990f156795b5735c)
+        ;
+
+        
+    
+    
+            var marker_3acfcd3eafb449fd817eff920484a4ba = L.marker(
+                [37.532877, 127.0752337],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_c86c82587b8640bfb13eb49c1206e21b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2d223b415e64bcbb215ae0cb9f633e6 = $(`<div id="html_e2d223b415e64bcbb215ae0cb9f633e6" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>자양종합사회복지관</strong><br> 영업시간: 월-토 11:30-13:00 <br> 제공대상: 국민기초생활수급자<br> 주소: 서울특별시 광진구 자양번영로 35(자양동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_c86c82587b8640bfb13eb49c1206e21b.setContent(html_e2d223b415e64bcbb215ae0cb9f633e6);
+        
+
+        marker_3acfcd3eafb449fd817eff920484a4ba.bindPopup(popup_c86c82587b8640bfb13eb49c1206e21b)
+        ;
+
+        
+    
+    
+            var marker_50dd04f671834bd8abc3ac0486a7c5f7 = L.marker(
+                [37.551093, 127.0715961],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_cd532e3c88b04dbeaa76431488d7ec9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6971c2b60abf4115b18297f53263a101 = $(`<div id="html_6971c2b60abf4115b18297f53263a101" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>광진노인종합복지관</strong><br> 영업시간: 월-금 11:30-13:00 <br> 제공대상: 국민기초생활수급자<br> 주소: 서울특별시 광진구 군자로 88(군자동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_cd532e3c88b04dbeaa76431488d7ec9f.setContent(html_6971c2b60abf4115b18297f53263a101);
+        
+
+        marker_50dd04f671834bd8abc3ac0486a7c5f7.bindPopup(popup_cd532e3c88b04dbeaa76431488d7ec9f)
+        ;
+
+        
+    
+    
+            var marker_a1d350ef16914ed5b23d37c2bdaa4ab7 = L.marker(
+                [37.58739985, 127.1018199],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_9c6a23e94d70414f817ddede229e325c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe306459730640ad90078b1254f78032 = $(`<div id="html_fe306459730640ad90078b1254f78032" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>용마경로복지센터</strong><br> 영업시간: 월-금 11:30-13:00 <br> 제공대상: 만 60세 이상 결식 우려 저소득 어르신<br> 주소: 서울특별시 중랑구 용마산로94길 98<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_9c6a23e94d70414f817ddede229e325c.setContent(html_fe306459730640ad90078b1254f78032);
+        
+
+        marker_a1d350ef16914ed5b23d37c2bdaa4ab7.bindPopup(popup_9c6a23e94d70414f817ddede229e325c)
+        ;
+
+        
+    
+    
+            var marker_fd527113427d4bfb9249af587fd495eb = L.marker(
+                [37.5255832, 126.8570879],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_aaca45cbb0024e1c84c458ebd92d2efc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1fd0ea89e80d4faf8ce10a84ca481632 = $(`<div id="html_1fd0ea89e80d4faf8ce10a84ca481632" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>신정종합사회복지관 경로식당</strong><br> 영업시간: 월-토 11:30-13:00 <br> 제공대상: 저소득 결식우려 어르신<br> 주소: 서울특별시 양천구 신정중앙로 36 (신정동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_aaca45cbb0024e1c84c458ebd92d2efc.setContent(html_1fd0ea89e80d4faf8ce10a84ca481632);
+        
+
+        marker_fd527113427d4bfb9249af587fd495eb.bindPopup(popup_aaca45cbb0024e1c84c458ebd92d2efc)
+        ;
+
+        
+    
+    
+            var marker_adb495b7b6724099ab43a29716f8c129 = L.marker(
+                [37.544242, 126.866384],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_2ee8ca3c578540e0b219abc67be7066a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_140bdfad8af34b2ca760bbfea455e25d = $(`<div id="html_140bdfad8af34b2ca760bbfea455e25d" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>목동종합사회복지관 경로식당</strong><br> 영업시간: 월-토 11:30-13:00 <br> 제공대상: 저소득 결식우려 어르신<br> 주소: 서울특별시 양천구 목동중앙북로8길 104 (목동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_2ee8ca3c578540e0b219abc67be7066a.setContent(html_140bdfad8af34b2ca760bbfea455e25d);
+        
+
+        marker_adb495b7b6724099ab43a29716f8c129.bindPopup(popup_2ee8ca3c578540e0b219abc67be7066a)
+        ;
+
+        
+    
+    
+            var marker_c195fde279cc4febb57f55f308954f0c = L.marker(
+                [37.52003276, 126.8473669],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_bc2ec581d2494bba9833bec13baaadb3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8c1472d31444e5683304a5bd6d96e77 = $(`<div id="html_f8c1472d31444e5683304a5bd6d96e77" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>신월종합사회복지관 경로식당</strong><br> 영업시간: 월-토 11:30-13:00 <br> 제공대상: 저소득 결식우려 어르신<br> 주소: 서울특별시 양천구 신월로24길 19 (신월동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_bc2ec581d2494bba9833bec13baaadb3.setContent(html_f8c1472d31444e5683304a5bd6d96e77);
+        
+
+        marker_c195fde279cc4febb57f55f308954f0c.bindPopup(popup_bc2ec581d2494bba9833bec13baaadb3)
+        ;
+
+        
+    
+    
+            var marker_8c857b2e8d8f4386a1bafb346b9bf148 = L.marker(
+                [37.536465, 126.869268],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_fc04b888cb1b45a2bcab4f24eba39663 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f86ae07d0ae4937b33f995e01648b7e = $(`<div id="html_0f86ae07d0ae4937b33f995e01648b7e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>목동실버복지문화센터 경로식당</strong><br> 영업시간: 월-토 11:30-13:00 <br> 제공대상: 저소득 결식우려 어르신<br> 주소: 서울특별시 양천구 목동중앙로3길 21(목동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_fc04b888cb1b45a2bcab4f24eba39663.setContent(html_0f86ae07d0ae4937b33f995e01648b7e);
+        
+
+        marker_8c857b2e8d8f4386a1bafb346b9bf148.bindPopup(popup_fc04b888cb1b45a2bcab4f24eba39663)
+        ;
+
+        
+    
+    
+            var marker_7761f3b572304186a69142e1dff7387f = L.marker(
+                [37.519077, 126.835622],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_9924f75f87ed4047877cbdaec92d116a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1d1644e580d493eb5bc6b233917007e = $(`<div id="html_e1d1644e580d493eb5bc6b233917007e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>해맞이경로식당</strong><br> 영업시간: 월-토 11:30-13:00 <br> 제공대상: 저소득 결식우려 어르신<br> 주소: 서울특별시 양천구 지양로 37(신월동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_9924f75f87ed4047877cbdaec92d116a.setContent(html_e1d1644e580d493eb5bc6b233917007e);
+        
+
+        marker_7761f3b572304186a69142e1dff7387f.bindPopup(popup_9924f75f87ed4047877cbdaec92d116a)
+        ;
+
+        
+    
+    
+            var marker_415f1ccb98a64664b1c6e33c9eeadcd5 = L.marker(
+                [37.564756, 127.041241],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_8be15fac2405404b9630fe401569ccab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf5ecb3f8faf4fa0bb00582ce34f41c8 = $(`<div id="html_bf5ecb3f8faf4fa0bb00582ce34f41c8" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>성동노인종합복지관</strong><br> 영업시간: 월-토 11:30-13:00 <br> 제공대상: 60세이상 저소득 노인<br> 주소: 서울특별시 성동구 마조로 77<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_8be15fac2405404b9630fe401569ccab.setContent(html_bf5ecb3f8faf4fa0bb00582ce34f41c8);
+        
+
+        marker_415f1ccb98a64664b1c6e33c9eeadcd5.bindPopup(popup_8be15fac2405404b9630fe401569ccab)
+        ;
+
+        
+    
+    
+            var marker_04eaf75a9c674d4ab32b998ad12a79ff = L.marker(
+                [37.57416749, 127.0883012],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_d5171d809d9c42409edca26235088246 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7744c86f315e433bbee1b556c1f9f50e = $(`<div id="html_7744c86f315e433bbee1b556c1f9f50e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>면목종합사회복지관</strong><br> 영업시간: 월-토 11:30-12:30 <br> 제공대상: 만 60세 이상 결식 우려 저소득 어르신<br> 주소: 서울특별시 중랑구 용마산로 228<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_d5171d809d9c42409edca26235088246.setContent(html_7744c86f315e433bbee1b556c1f9f50e);
+        
+
+        marker_04eaf75a9c674d4ab32b998ad12a79ff.bindPopup(popup_d5171d809d9c42409edca26235088246)
+        ;
+
+        
+    
+    
+            var marker_d6455c712cd24e0b8af436e15f76d0e2 = L.marker(
+                [37.58120413, 126.9179051],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_ff1a6a5161d4407cb10f9d364646a7b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75160905f7124c969404dbbd45e3621f = $(`<div id="html_75160905f7124c969404dbbd45e3621f" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>북가좌2동노인복지센터</strong><br> 영업시간: 월-토 10:30-12:00 <br> 제공대상: 저소득어르신<br> 주소: 서울특별시 서대문구 증가로20길 43 (북가좌동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_ff1a6a5161d4407cb10f9d364646a7b1.setContent(html_75160905f7124c969404dbbd45e3621f);
+        
+
+        marker_d6455c712cd24e0b8af436e15f76d0e2.bindPopup(popup_ff1a6a5161d4407cb10f9d364646a7b1)
+        ;
+
+        
+    
+    
+            var marker_ede0e15b57b44d25b33f4e4895fb94e5 = L.marker(
+                [37.56432894, 126.9608681],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_50fa68ef0eb640db850878519881e64d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7deb3801cf7042969e1b7a11e61d7ea8 = $(`<div id="html_7deb3801cf7042969e1b7a11e61d7ea8" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>효림재가노인지원센터</strong><br> 영업시간: 화,금 10:30-12:00 <br> 제공대상: 저소득어르신<br> 주소: 서울특별시 서대문구 경기대로9길 62 (충정로3가)<br> 비고: 밑반찬배달  홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_50fa68ef0eb640db850878519881e64d.setContent(html_7deb3801cf7042969e1b7a11e61d7ea8);
+        
+
+        marker_ede0e15b57b44d25b33f4e4895fb94e5.bindPopup(popup_50fa68ef0eb640db850878519881e64d)
+        ;
+
+        
+    
+    
+            var marker_bc4808b3b04e4fba90b79ce77cc82ab2 = L.marker(
+                [37.58279515, 126.9506699],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_c7dbdda5e55043d786914f33ca64ef84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a0e2a77caa74234bb4e504ab3927f92 = $(`<div id="html_6a0e2a77caa74234bb4e504ab3927f92" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>인왕어르신복지센터</strong><br> 영업시간: 월-토 10:30-12:00 <br> 제공대상: 저소득어르신<br> 주소: 서울특별시 서대문구 통일로26길 12-5 (홍제동)<br> 비고: 월-토 경로식당/ 화,목 밑반찬배달  홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_c7dbdda5e55043d786914f33ca64ef84.setContent(html_6a0e2a77caa74234bb4e504ab3927f92);
+        
+
+        marker_bc4808b3b04e4fba90b79ce77cc82ab2.bindPopup(popup_c7dbdda5e55043d786914f33ca64ef84)
+        ;
+
+        
+    
+    
+            var marker_78293e4f0c694b7680ea4504a8b28cd4 = L.marker(
+                [37.57563305, 127.0837108],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_39fddd0db38e47da957e9aa565491aa6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0ecf5e658e04146b5d61570a4be6a5b = $(`<div id="html_f0ecf5e658e04146b5d61570a4be6a5b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>동서울 중앙교회</strong><br> 영업시간: 월-토 11:30-12:30 <br> 제공대상: 만 60세 이상 결식 우려 저소득 어르신<br> 주소: 서울특별시 중랑구 면목로 29길 37<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_39fddd0db38e47da957e9aa565491aa6.setContent(html_f0ecf5e658e04146b5d61570a4be6a5b);
+        
+
+        marker_78293e4f0c694b7680ea4504a8b28cd4.bindPopup(popup_39fddd0db38e47da957e9aa565491aa6)
+        ;
+
+        
+    
+    
+            var marker_2d89742b020c4f538c2a1be04da96314 = L.marker(
+                [37.60403622, 127.1026276],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_107f731af028441a9b8d8d85237b1dc5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cbaa02db815d4924bb40c224f5a9bc60 = $(`<div id="html_cbaa02db815d4924bb40c224f5a9bc60" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>사랑의 집</strong><br> 영업시간: 월-금 12:00-13:00 <br> 제공대상: 만 60세 이상 결식 우려 저소득 어르신<br> 주소: 서울특별시 중랑구 송림길 91<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_107f731af028441a9b8d8d85237b1dc5.setContent(html_cbaa02db815d4924bb40c224f5a9bc60);
+        
+
+        marker_2d89742b020c4f538c2a1be04da96314.bindPopup(popup_107f731af028441a9b8d8d85237b1dc5)
+        ;
+
+        
+    
+    
+            var marker_0a355575665a491e9df1909a6c17fa4a = L.marker(
+                [37.60363199, 127.0783751],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_df73bba2118f4218b0437c11db0785dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_869da243103a4d0ba3b9ab468333b047 = $(`<div id="html_869da243103a4d0ba3b9ab468333b047" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>중화동교회</strong><br> 영업시간: 월,화,목,금,토 11:30-12:30 <br> 제공대상: 만 60세 이상 결식 우려 저소득 어르신<br> 주소: 서울특별시 중랑구 동일로 139길 10<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_df73bba2118f4218b0437c11db0785dd.setContent(html_869da243103a4d0ba3b9ab468333b047);
+        
+
+        marker_0a355575665a491e9df1909a6c17fa4a.bindPopup(popup_df73bba2118f4218b0437c11db0785dd)
+        ;
+
+        
+    
+    
+            var marker_1f1960cf63c543c89e40c87e117c9896 = L.marker(
+                [37.59147426, 127.1033393],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_64c1d9fc967a49cfa08cf34b950c0cca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a593966c79e244e3be01fb6001cde321 = $(`<div id="html_a593966c79e244e3be01fb6001cde321" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>나눔의 집</strong><br> 영업시간: 월-금 12:00-13:00 <br> 제공대상: 만 60세 이상 결식 우려 저소득 어르신<br> 주소: 서울특별시 중랑구 용마공원로 5가길 69-6<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_64c1d9fc967a49cfa08cf34b950c0cca.setContent(html_a593966c79e244e3be01fb6001cde321);
+        
+
+        marker_1f1960cf63c543c89e40c87e117c9896.bindPopup(popup_64c1d9fc967a49cfa08cf34b950c0cca)
+        ;
+
+        
+    
+    
+            var marker_b4b714d91d5f47ec9351e002ed1b954a = L.marker(
+                [37.60330431, 127.0811539],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_77c3602c8bcc46dfa27dfc22de6918f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58174654a130482eb53bc1c393334ea2 = $(`<div id="html_58174654a130482eb53bc1c393334ea2" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>구립중화경로복지관</strong><br> 영업시간: 월-금 11:00-12:00 <br> 제공대상: 만 60세 이상 결식 우려 저소득 어르신<br> 주소: 서울특별시 중랑구 동일로 138길 28<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_77c3602c8bcc46dfa27dfc22de6918f6.setContent(html_58174654a130482eb53bc1c393334ea2);
+        
+
+        marker_b4b714d91d5f47ec9351e002ed1b954a.bindPopup(popup_77c3602c8bcc46dfa27dfc22de6918f6)
+        ;
+
+        
+    
+    
+            var marker_f7c14987158147a69438a26546c96719 = L.marker(
+                [37.61481251, 127.0878892],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_ff24e6c43c894a65a82656ff0f73054c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6056f35a469646a0b199f03904222029 = $(`<div id="html_6056f35a469646a0b199f03904222029" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>구립신내노인종합복지관</strong><br> 영업시간: 월-토 11:30-13:00 <br> 제공대상: 만 60세 이상 결식 우려 저소득 어르신<br> 주소: 서울특별시 중랑구 신내로 15길 175<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_ff24e6c43c894a65a82656ff0f73054c.setContent(html_6056f35a469646a0b199f03904222029);
+        
+
+        marker_f7c14987158147a69438a26546c96719.bindPopup(popup_ff24e6c43c894a65a82656ff0f73054c)
+        ;
+
+        
+    
+    
+            var marker_646a3d761b704137a857c7e42ff6948a = L.marker(
+                [37.60447047, 127.0959157],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_d704919dd1284445a3467ba061123cda = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36d9eadd73f448b59ee24abfaeb6fac5 = $(`<div id="html_36d9eadd73f448b59ee24abfaeb6fac5" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>유린원광종합사회복지관</strong><br> 영업시간: 월-금 11:30-12:30 <br> 제공대상: 만 60세 이상 결식 우려 저소득 어르신<br> 주소: 서울특별시 중랑구 신내로 56<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_d704919dd1284445a3467ba061123cda.setContent(html_36d9eadd73f448b59ee24abfaeb6fac5);
+        
+
+        marker_646a3d761b704137a857c7e42ff6948a.bindPopup(popup_d704919dd1284445a3467ba061123cda)
+        ;
+
+        
+    
+    
+            var marker_1a9a7368b6fb4c82af289ea453f38539 = L.marker(
+                [37.60581862, 127.0916098],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_fecd90abe5ca4364bedcd4bdbacc4d79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_918f7cf9e9d74938ae8c9f0ad021be3f = $(`<div id="html_918f7cf9e9d74938ae8c9f0ad021be3f" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>신내종합사회복지관</strong><br> 영업시간: 월-금 12:00-13:00 <br> 제공대상: 만 60세 이상 결식 우려 저소득 어르신<br> 주소: 서울특별시 중랑구 봉화산로 153<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_fecd90abe5ca4364bedcd4bdbacc4d79.setContent(html_918f7cf9e9d74938ae8c9f0ad021be3f);
+        
+
+        marker_1a9a7368b6fb4c82af289ea453f38539.bindPopup(popup_fecd90abe5ca4364bedcd4bdbacc4d79)
+        ;
+
+        
+    
+    
+            var marker_e88d4f2133e94ec08a7c6a5d7def7008 = L.marker(
+                [37.60929753, 127.0949042],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_3ac63d6e7f044668a33e9ae74778db2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bdbd50ee90fe488094aa3388a255792b = $(`<div id="html_bdbd50ee90fe488094aa3388a255792b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>시립대종합사회복지관</strong><br> 영업시간: 월-금 11:30-12:30 <br> 제공대상: 만 60세 이상 결식 우려 저소득 어르신<br> 주소: 서울특별시 중랑구 신내로 115<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_3ac63d6e7f044668a33e9ae74778db2d.setContent(html_bdbd50ee90fe488094aa3388a255792b);
+        
+
+        marker_e88d4f2133e94ec08a7c6a5d7def7008.bindPopup(popup_3ac63d6e7f044668a33e9ae74778db2d)
+        ;
+
+        
+    
+    
+            var marker_53aa17ce29374cb980475983d1c7eea1 = L.marker(
+                [37.58843496, 127.0778419],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_2fafe672eaec45b49d9d848abec24034 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3acba2ee3bed43518b606dcb52efe936 = $(`<div id="html_3acba2ee3bed43518b606dcb52efe936" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>시립중랑노인종합복지관</strong><br> 영업시간: 월-토 11:30-12:30 <br> 제공대상: 만 60세 이상 결식 우려 저소득 어르신<br> 주소: 서울특별시 중랑구 겸재로 9길 45<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_2fafe672eaec45b49d9d848abec24034.setContent(html_3acba2ee3bed43518b606dcb52efe936);
+        
+
+        marker_53aa17ce29374cb980475983d1c7eea1.bindPopup(popup_2fafe672eaec45b49d9d848abec24034)
+        ;
+
+        
+    
+    
+            var marker_4c4eb7607a1f44c7b5fb4fbec6f76c0f = L.marker(
+                [37.54232552, 126.9428348],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_a4e11c29c0af42f998c97715d121a42a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb1b630b9f5f4a1fb95b6700b563f625 = $(`<div id="html_cb1b630b9f5f4a1fb95b6700b563f625" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>용강노인복지관</strong><br> 영업시간: 월-금 11:30-13:00 <br> 제공대상: 수급자,차상위,기타저소득(경로식당<br> 주소: 서울특별시 마포구 토정로31길 31<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_a4e11c29c0af42f998c97715d121a42a.setContent(html_cb1b630b9f5f4a1fb95b6700b563f625);
+        
+
+        marker_4c4eb7607a1f44c7b5fb4fbec6f76c0f.bindPopup(popup_a4e11c29c0af42f998c97715d121a42a)
+        ;
+
+        
+    
+    
+            var marker_f82c52a5f0d44bac9f0cd4edd529cbd3 = L.marker(
+                [37.55498128, 126.9587653],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_746eb241c9f5405f8049844ed093ef5f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec655063dbe74a88ac3d5a4cd2cccccd = $(`<div id="html_ec655063dbe74a88ac3d5a4cd2cccccd" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>아현노인복지센터</strong><br> 영업시간: 월-금 11:30-12:30 <br> 제공대상: 수급자,차상위,기타저소득(경로식당,식사배달<br> 주소: 서울특별시 마포구 마포대로26길 19<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_746eb241c9f5405f8049844ed093ef5f.setContent(html_ec655063dbe74a88ac3d5a4cd2cccccd);
+        
+
+        marker_f82c52a5f0d44bac9f0cd4edd529cbd3.bindPopup(popup_746eb241c9f5405f8049844ed093ef5f)
+        ;
+
+        
+    
+    
+            var marker_d53fbf60074b4d5eb106bd40d9e8eef2 = L.marker(
+                [37.5655, 126.9003702],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_fb5716dc862d4d3981934727fa87f9a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38e3f2e4ddd44a76a398512bc72840c5 = $(`<div id="html_38e3f2e4ddd44a76a398512bc72840c5" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>이대성산종합사회복지관</strong><br> 영업시간: 월-금 10:50-11:50 <br> 제공대상: 수급자,차상위,기타저소득(경로식당,식사배달,밑반찬배달<br> 주소: 서울특별시 마포구 월드컵로215<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_fb5716dc862d4d3981934727fa87f9a1.setContent(html_38e3f2e4ddd44a76a398512bc72840c5);
+        
+
+        marker_d53fbf60074b4d5eb106bd40d9e8eef2.bindPopup(popup_fb5716dc862d4d3981934727fa87f9a1)
+        ;
+
+        
+    
+    
+            var marker_8842615c78ff4ae68d28a80d312e1f1a = L.marker(
+                [37.5489226, 126.9322146],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_a0c632033d7e4c50a7de0170f8e9c61f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_521fad5cda7e42d1a6f4d8de6fff923c = $(`<div id="html_521fad5cda7e42d1a6f4d8de6fff923c" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>시립마포노인종합복지관</strong><br> 영업시간: 월-금 11:15-13:00 <br> 제공대상: 수급자,차상위,기타저소득(경로식당,식사배달<br> 주소: 서울특별시 마포구 서강로 68<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_a0c632033d7e4c50a7de0170f8e9c61f.setContent(html_521fad5cda7e42d1a6f4d8de6fff923c);
+        
+
+        marker_8842615c78ff4ae68d28a80d312e1f1a.bindPopup(popup_a0c632033d7e4c50a7de0170f8e9c61f)
+        ;
+
+        
+    
+    
+            var marker_fcddde834fe94375832117253ee61756 = L.marker(
+                [37.555841, 126.942391],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_3479a340975d4b1e9f52da14c98f5750 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88bd3f44317d47c7a265a8879255a897 = $(`<div id="html_88bd3f44317d47c7a265a8879255a897" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>우리마포복지관</strong><br> 영업시간: 월-금 11:30-13:00 <br> 제공대상: 수급자,차상위,기타저소득(경로식당<br> 주소: 서울특별시 마포구 신촌로26길 10<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_3479a340975d4b1e9f52da14c98f5750.setContent(html_88bd3f44317d47c7a265a8879255a897);
+        
+
+        marker_fcddde834fe94375832117253ee61756.bindPopup(popup_3479a340975d4b1e9f52da14c98f5750)
+        ;
+
+        
+    
+    
+            var marker_0c63e1027697493491ed69391e401295 = L.marker(
+                [37.55746063, 126.9603136],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_001658e2fb974dd3b1efc01252d224fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_020c0d8ce8954377b8dca86cc15d2c53 = $(`<div id="html_020c0d8ce8954377b8dca86cc15d2c53" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>아현실버복지관</strong><br> 영업시간: 월-금 11:20-12:30 <br> 제공대상: 수급자,차상위,기타저소득(경로식당<br> 주소: 서울특별시 마포구 환일길3<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_001658e2fb974dd3b1efc01252d224fd.setContent(html_020c0d8ce8954377b8dca86cc15d2c53);
+        
+
+        marker_0c63e1027697493491ed69391e401295.bindPopup(popup_001658e2fb974dd3b1efc01252d224fd)
+        ;
+
+        
+    
+    
+            var marker_586320762c5c4d0e8a5a79b9f7adbaf6 = L.marker(
+                [37.5953267, 126.9464065],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_b0288360c5cf4fb08fc7f92cdcb69cc6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ded5dedcb4e49b7a2aac0c18edb72d4 = $(`<div id="html_1ded5dedcb4e49b7a2aac0c18edb72d4" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>홍은종합사회복지관</strong><br> 영업시간: 월-일 10:30-12:00 <br> 제공대상: 저소득어르신<br> 주소: 서울특별시 서대문구 세검정로1길 116 (홍은동)<br> 비고: 월-토 경로식당/ 월-일 식사배달/ 화,목 밑반찬배달  홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_b0288360c5cf4fb08fc7f92cdcb69cc6.setContent(html_1ded5dedcb4e49b7a2aac0c18edb72d4);
+        
+
+        marker_586320762c5c4d0e8a5a79b9f7adbaf6.bindPopup(popup_b0288360c5cf4fb08fc7f92cdcb69cc6)
+        ;
+
+        
+    
+    
+            var marker_8b727a9e4eb44b5ab950c4668387dd66 = L.marker(
+                [37.559447, 126.9604714],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_ea58c152fbbb408c8cd55b43bb55dd51 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f119f0b7c6d64f14be530ce929eb8198 = $(`<div id="html_f119f0b7c6d64f14be530ce929eb8198" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>이대종합사회복지관</strong><br> 영업시간: 월-일 10:30-12:00 <br> 제공대상: 저소득어르신<br> 주소: 서울특별시 서대문구 북아현로4마길 26-24 (북아현동)<br> 비고: 월-일 식사배달/ 월,목 밑반찬배달  홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_ea58c152fbbb408c8cd55b43bb55dd51.setContent(html_f119f0b7c6d64f14be530ce929eb8198);
+        
+
+        marker_8b727a9e4eb44b5ab950c4668387dd66.bindPopup(popup_ea58c152fbbb408c8cd55b43bb55dd51)
+        ;
+
+        
+    
+    
+            var marker_524b2871095e4a8488cbcb956112342e = L.marker(
+                [37.57224104, 126.9235123],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_686fff4c415742e6990632a96365f7e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f242c9339fe4afc931ee4e806b0c08c = $(`<div id="html_8f242c9339fe4afc931ee4e806b0c08c" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>연희노인여가복지시설</strong><br> 영업시간: 월-일 10:30-12:00 <br> 제공대상: 저소득어르신<br> 주소: 서울특별시 서대문구 홍제천로2길 111 (연희동)<br> 비고: 월-토 경로식당/ 월-일 식사배달/ 화,목 밑반찬배달  홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_686fff4c415742e6990632a96365f7e1.setContent(html_8f242c9339fe4afc931ee4e806b0c08c);
+        
+
+        marker_524b2871095e4a8488cbcb956112342e.bindPopup(popup_686fff4c415742e6990632a96365f7e1)
+        ;
+
+        
+    
+    
+            var marker_d833dc541fb04526a96e9c4fba780edc = L.marker(
+                [37.56800449, 126.959129],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_0f18c24dced34829a51642c6313ee7d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2756bc56a315429e96a41ee1e122989d = $(`<div id="html_2756bc56a315429e96a41ee1e122989d" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>서대문노인종합복지관</strong><br> 영업시간: 월-일 10:30-12:00 <br> 제공대상: 저소득어르신<br> 주소: 서울특별시 서대문구 독립문로8길 57 (천연동)<br> 비고: 월-토 경로식당/ 월-일 식사배달/ 월,목 밑반찬배달  홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_0f18c24dced34829a51642c6313ee7d3.setContent(html_2756bc56a315429e96a41ee1e122989d);
+        
+
+        marker_d833dc541fb04526a96e9c4fba780edc.bindPopup(popup_0f18c24dced34829a51642c6313ee7d3)
+        ;
+
+        
+    
+    
+            var marker_3c67368e6bd849a9a71f6ab453c20fae = L.marker(
+                [37.5714004, 126.9200551],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_6d3d1bf82f0a4a768ac879fd70f7924e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4032a498a1804674ad92f61c4962a7a7 = $(`<div id="html_4032a498a1804674ad92f61c4962a7a7" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>서대문종합사회복지관</strong><br> 영업시간: 월-일 10:30-12:00 <br> 제공대상: 저소득어르신<br> 주소: 서울특별시 서대문구 모래내로 177 (남가좌동)<br> 비고: 월-토 경로식당/ 월-일 식사배달/ 화,목 밑반찬배달  홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_6d3d1bf82f0a4a768ac879fd70f7924e.setContent(html_4032a498a1804674ad92f61c4962a7a7);
+        
+
+        marker_3c67368e6bd849a9a71f6ab453c20fae.bindPopup(popup_6d3d1bf82f0a4a768ac879fd70f7924e)
+        ;
+
+        
+    
+    
+            var marker_6e2520b085d64a9588ac5a2ed411cedf = L.marker(
+                [37.6203381, 127.023387],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_7b30a81706a6451083120e336bb0463d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7dfa7a7310524010a3f8d9ad5075f8d7 = $(`<div id="html_7dfa7a7310524010a3f8d9ad5075f8d7" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>자비의 집</strong><br> 영업시간: 월-토 11:30-12:30 <br> 제공대상: 기초생활수급자, 차상위 계층 및 저소득 독거어르신<br> 주소: 서울특별시 강북구 도봉로29길 90<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_7b30a81706a6451083120e336bb0463d.setContent(html_7dfa7a7310524010a3f8d9ad5075f8d7);
+        
+
+        marker_6e2520b085d64a9588ac5a2ed411cedf.bindPopup(popup_7b30a81706a6451083120e336bb0463d)
+        ;
+
+        
+    
+    
+            var marker_076e8966c4bc44b5b3214c0db80e6650 = L.marker(
+                [37.628764, 127.039059],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_d13b7ef5c0674adcafdaf6097d1e1480 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a00622554844554825c6d912e560a76 = $(`<div id="html_9a00622554844554825c6d912e560a76" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>강북장애인종합복지관</strong><br> 영업시간: 월-토 11:40-13:00 <br> 제공대상: 기초생활수급자, 차상위 계층 및 저소득 독거어르신<br> 주소: 서울특별시 강북구 오현로 189<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_d13b7ef5c0674adcafdaf6097d1e1480.setContent(html_9a00622554844554825c6d912e560a76);
+        
+
+        marker_076e8966c4bc44b5b3214c0db80e6650.bindPopup(popup_d13b7ef5c0674adcafdaf6097d1e1480)
+        ;
+
+        
+    
+    
+            var marker_6c38eba37f054de2ac3a6e2366ac4a69 = L.marker(
+                [37.635688, 127.018757],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_caf08e80bdb24397be061e5ad960f1ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07418470861345af922d7a7063452621 = $(`<div id="html_07418470861345af922d7a7063452621" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>시립강북노인종합복지관</strong><br> 영업시간: 월-토 11:00-12:30 <br> 제공대상: 기초생활수급자, 차상위 계층 및 저소득 독거어르신<br> 주소: 서울특별시 강북구 삼양로 92길 40<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_caf08e80bdb24397be061e5ad960f1ac.setContent(html_07418470861345af922d7a7063452621);
+        
+
+        marker_6c38eba37f054de2ac3a6e2366ac4a69.bindPopup(popup_caf08e80bdb24397be061e5ad960f1ac)
+        ;
+
+        
+    
+    
+            var marker_e00f8a51a1824f4ba94a676c3a2a5e2e = L.marker(
+                [37.622945, 127.0185329],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_2755b08086f14bd1bf8e43b8245b1d1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_951577f78d5d42cd91e713865e39e613 = $(`<div id="html_951577f78d5d42cd91e713865e39e613" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>삼양동종합복지센터</strong><br> 영업시간: 월-토 11:30-12:30 <br> 제공대상: 기초생활수급자, 차상위 계층 및 저소득 독거어르신<br> 주소: 서울특별시 강북구 삼양로 47길 9<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_2755b08086f14bd1bf8e43b8245b1d1f.setContent(html_951577f78d5d42cd91e713865e39e613);
+        
+
+        marker_e00f8a51a1824f4ba94a676c3a2a5e2e.bindPopup(popup_2755b08086f14bd1bf8e43b8245b1d1f)
+        ;
+
+        
+    
+    
+            var marker_4629aa5d3ed24a6e9946f3e2a008662d = L.marker(
+                [37.642583, 127.016831],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_f4a6559a842745c88518fdb6db4256ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_821790711eba4373a55d0042f260874b = $(`<div id="html_821790711eba4373a55d0042f260874b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>운가자비원</strong><br> 영업시간: 월-토 11:30-12:10 <br> 제공대상: 기초생활수급자, 차상위 계층 및 저소득 독거어르신<br> 주소: 서울특별시 강북구 삼양로 112길 5<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_f4a6559a842745c88518fdb6db4256ba.setContent(html_821790711eba4373a55d0042f260874b);
+        
+
+        marker_4629aa5d3ed24a6e9946f3e2a008662d.bindPopup(popup_f4a6559a842745c88518fdb6db4256ba)
+        ;
+
+        
+    
+    
+            var marker_faae8aa615104dcc8a5e73662d7b2f9e = L.marker(
+                [37.63368721, 127.0345359],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_f83a2b3d456b482a8ae84d1d02b3f8e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc4f88ad45a7488e803cb35e3261e813 = $(`<div id="html_cc4f88ad45a7488e803cb35e3261e813" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>번동5단지종합사회복지관</strong><br> 영업시간: 월-토 11:30-12:00 <br> 제공대상: 기초생활수급자, 차상위 계층 및 저소득 독거어르신<br> 주소: 서울특별시 강북구 한천로115길 20<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_f83a2b3d456b482a8ae84d1d02b3f8e4.setContent(html_cc4f88ad45a7488e803cb35e3261e813);
+        
+
+        marker_faae8aa615104dcc8a5e73662d7b2f9e.bindPopup(popup_f83a2b3d456b482a8ae84d1d02b3f8e4)
+        ;
+
+        
+    
+    
+            var marker_131cb29b94b74655b8bd3db1768cfa06 = L.marker(
+                [37.625687, 127.013394],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_f5b1956a09404520a9af8ee2f73a9b8f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36f2a27f925f441cadd7768b3d65fc0f = $(`<div id="html_36f2a27f925f441cadd7768b3d65fc0f" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>구세군강북종합사회복지관</strong><br> 영업시간: 월-토 11:00-12:00 <br> 제공대상: 기초생활수급자, 차상위 계층 및 저소득 독거어르신<br> 주소: 서울특별시 강북구 인수봉로 20가길 24<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_f5b1956a09404520a9af8ee2f73a9b8f.setContent(html_36f2a27f925f441cadd7768b3d65fc0f);
+        
+
+        marker_131cb29b94b74655b8bd3db1768cfa06.bindPopup(popup_f5b1956a09404520a9af8ee2f73a9b8f)
+        ;
+
+        
+    
+    
+            var marker_f9c5c6403fa14ce7a483f38ed5a105be = L.marker(
+                [37.62760841, 127.0448051],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_0bc8afb31ab74cffbcde80130b01a806 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0b434a4f0c84182a5c0ea3e85b022df = $(`<div id="html_b0b434a4f0c84182a5c0ea3e85b022df" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>번동2단지종합사회복지관</strong><br> 영업시간: 월-토 11:30-12:00 <br> 제공대상: 기초생활수급자, 차상위 계층 및 저소득 독거어르신<br> 주소: 서울특별시 강북구 한천로 105길 24<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_0bc8afb31ab74cffbcde80130b01a806.setContent(html_b0b434a4f0c84182a5c0ea3e85b022df);
+        
+
+        marker_f9c5c6403fa14ce7a483f38ed5a105be.bindPopup(popup_0bc8afb31ab74cffbcde80130b01a806)
+        ;
+
+        
+    
+    
+            var marker_7990b802fd4547cdbe4937bf8199b940 = L.marker(
+                [37.51590994, 127.0521409],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_f051a7cbf5834cb7b28b14714a83f0ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bfe581abdfcd455c8931dda37cca4484 = $(`<div id="html_bfe581abdfcd455c8931dda37cca4484" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>강남노인종합복지관</strong><br> 영업시간: 월-금 11:30-13:00 <br> 제공대상: 만60세이상 결식우려가 있는 강남구 거주 저소득 어르신<br> 주소: 서울특별시 강남구 삼성로 628<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_f051a7cbf5834cb7b28b14714a83f0ba.setContent(html_bfe581abdfcd455c8931dda37cca4484);
+        
+
+        marker_7990b802fd4547cdbe4937bf8199b940.bindPopup(popup_f051a7cbf5834cb7b28b14714a83f0ba)
+        ;
+
+        
+    
+    
+            var marker_7a72342df45c4a8693f67a5c34a7da1a = L.marker(
+                [37.48370379, 127.0608923],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_42d6a040719e49d3b90b26f495ff426c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_acdb0547d1e2495a8761f76203ba63e9 = $(`<div id="html_acdb0547d1e2495a8761f76203ba63e9" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>개포경로당</strong><br> 영업시간: 월-금 11:30-12:30 <br> 제공대상: 만60세이상 결식우려가 있는 강남구 거주 저소득 어르신<br> 주소: 서울특별시 강남구 선릉로12길 12<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_42d6a040719e49d3b90b26f495ff426c.setContent(html_acdb0547d1e2495a8761f76203ba63e9);
+        
+
+        marker_7a72342df45c4a8693f67a5c34a7da1a.bindPopup(popup_42d6a040719e49d3b90b26f495ff426c)
+        ;
+
+        
+    
+    
+            var marker_999247dc439244e499fcc4489ba8a73d = L.marker(
+                [37.4923312, 127.0745908],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_76c653275a8342be8749f43f51d4e847 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b3d4be129474743b25a0b8e5c1ff0e9 = $(`<div id="html_6b3d4be129474743b25a0b8e5c1ff0e9" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>대치1단지(일원2 경로당)</strong><br> 영업시간: 월-금 11:30-12:30 <br> 제공대상: 만60세이상 결식우려가 있는 강남구 거주 저소득 어르신<br> 주소: 서울특별시 강남구 개포로 109길 5<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_76c653275a8342be8749f43f51d4e847.setContent(html_6b3d4be129474743b25a0b8e5c1ff0e9);
+        
+
+        marker_999247dc439244e499fcc4489ba8a73d.bindPopup(popup_76c653275a8342be8749f43f51d4e847)
+        ;
+
+        
+    
+    
+            var marker_e625936dde10489bbe2a6cd080bd95eb = L.marker(
+                [37.510405, 126.858621],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_71c8f8f12b10459bb2043a4103e80ff5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_537c27659c874d8f979e9005cb5c59e0 = $(`<div id="html_537c27659c874d8f979e9005cb5c59e0" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>양천어르신종합복지관 경로식당</strong><br> 영업시간: 월-토 11:30-13:00 <br> 제공대상: 저소득 결식우려 어르신<br> 주소: 서울특별시 양천구 목동로3길 106 (신정동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_71c8f8f12b10459bb2043a4103e80ff5.setContent(html_537c27659c874d8f979e9005cb5c59e0);
+        
+
+        marker_e625936dde10489bbe2a6cd080bd95eb.bindPopup(popup_71c8f8f12b10459bb2043a4103e80ff5)
+        ;
+
+        
+    
+    
+            var marker_8852d570383047158ae36a625f0d7b0a = L.marker(
+                [37.534261, 126.826635],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_0f8c3ae23b394080bd94294f6d19553c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e1fc04ef8094f3fbdcd9a997382a455 = $(`<div id="html_6e1fc04ef8094f3fbdcd9a997382a455" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>서서울어르신복지관 경로식당</strong><br> 영업시간: 월-토 11:30-13:00 <br> 제공대상: 저소득 결식우려 어르신<br> 주소: 서울특별시 양천구 가로공원 60가길 16<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_0f8c3ae23b394080bd94294f6d19553c.setContent(html_6e1fc04ef8094f3fbdcd9a997382a455);
+        
+
+        marker_8852d570383047158ae36a625f0d7b0a.bindPopup(popup_0f8c3ae23b394080bd94294f6d19553c)
+        ;
+
+        
+    
+    
+            var marker_7cf0ed86213e4e7e8489d37627631122 = L.marker(
+                [37.51722556, 126.8764675],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_d2331ec29bb54feeb029cab2207540a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8faf478a15aa4bbeb366440e2088d417 = $(`<div id="html_8faf478a15aa4bbeb366440e2088d417" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>신목종합사회복지관 경로식당</strong><br> 영업시간: 월-토 11:30-13:00 <br> 제공대상: 저소득 결식우려 어르신<br> 주소: 서울특별시 양천구 신목로 5 (신정동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_d2331ec29bb54feeb029cab2207540a7.setContent(html_8faf478a15aa4bbeb366440e2088d417);
+        
+
+        marker_7cf0ed86213e4e7e8489d37627631122.bindPopup(popup_d2331ec29bb54feeb029cab2207540a7)
+        ;
+
+        
+    
+    
+            var marker_c6fe46801d534625a2310ac184f94ba1 = L.marker(
+                [37.518426, 126.876286],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_ef41562b1c7f4cf6b4ce39619b92d1ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0d8edfad6a44f10a0d0d4d24c41eea3 = $(`<div id="html_a0d8edfad6a44f10a0d0d4d24c41eea3" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>신목종합사회복지관(별관  경로식당)</strong><br> 영업시간: 월-토 11:30-13:00 <br> 제공대상: 저소득 결식우려 어르신<br> 주소: 서울특별시 양천구 목동남로 4길 6-46 목동2차 우성A 관리사무소 지하 1층<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_ef41562b1c7f4cf6b4ce39619b92d1ee.setContent(html_a0d8edfad6a44f10a0d0d4d24c41eea3);
+        
+
+        marker_c6fe46801d534625a2310ac184f94ba1.bindPopup(popup_ef41562b1c7f4cf6b4ce39619b92d1ee)
+        ;
+
+        
+    
+    
+            var marker_8be25a5e6dd94683a2f174a9c092b4ef = L.marker(
+                [37.519038, 126.840216],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_98b819b557cf4617bd56e79c8c291a86 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb0060d7948c43d2817d5adf2ae89eb8 = $(`<div id="html_bb0060d7948c43d2817d5adf2ae89eb8" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>한빛종합사회복지관 경로식당</strong><br> 영업시간: 월-토 11:30-13:00 <br> 제공대상: 저소득 결식우려 어르신<br> 주소: 서울특별시 양천구 신월로11길 16 (신월동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_98b819b557cf4617bd56e79c8c291a86.setContent(html_bb0060d7948c43d2817d5adf2ae89eb8);
+        
+
+        marker_8be25a5e6dd94683a2f174a9c092b4ef.bindPopup(popup_98b819b557cf4617bd56e79c8c291a86)
+        ;
+
+        
+    
+    
+            var marker_d0000a35cf8c48d1adf27214c7909e89 = L.marker(
+                [37.57581601, 126.9580239],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_4499630ea7f948e988c6f9fd1dc1d085 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4be7090916bc445298a1790ada530f3b = $(`<div id="html_4be7090916bc445298a1790ada530f3b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>종로노인종합복지관 무악센터</strong><br> 영업시간: 월-토 12:00-13:00 <br> 제공대상: 60세이상 가정형편이 어렵거나 부득이한 사정으로 식사를 거를 우려가 있는 어르신<br> 주소: 서울특별시 종로구 통일로14길 30(무악동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_4499630ea7f948e988c6f9fd1dc1d085.setContent(html_4be7090916bc445298a1790ada530f3b);
+        
+
+        marker_d0000a35cf8c48d1adf27214c7909e89.bindPopup(popup_4499630ea7f948e988c6f9fd1dc1d085)
+        ;
+
+        
+    
+    
+            var marker_172a8e231b1c47d4bfa418c10df608eb = L.marker(
+                [37.49453769, 127.1087136],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_25fe42995b174cab9c9d268c9fe30472 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c450a326156241978db0264909a6b4f5 = $(`<div id="html_c450a326156241978db0264909a6b4f5" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>하상바오로의 집</strong><br> 영업시간: 월,화,수,금,토 중식 <br> 제공대상: 노숙자 및 극빈층<br> 주소: 서울특별시 송파구 양재대로 932<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_25fe42995b174cab9c9d268c9fe30472.setContent(html_c450a326156241978db0264909a6b4f5);
+        
+
+        marker_172a8e231b1c47d4bfa418c10df608eb.bindPopup(popup_25fe42995b174cab9c9d268c9fe30472)
+        ;
+
+        
+    
+    
+            var marker_0058d2e8e3ee404fb1cd8608bade15c7 = L.marker(
+                [37.5037307, 127.092248],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_619104b61d3e4ad0a08bc8c062e20003 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5f782b5b48047eda16552be810f3189 = $(`<div id="html_c5f782b5b48047eda16552be810f3189" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>사랑나눔에덴복지</strong><br> 영업시간: 화,수,금,일 중식 <br> 제공대상: 독거노인, 노숙자,장애인 등<br> 주소: 서울특별시 송파구 백제고분로 27길 5-8<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_619104b61d3e4ad0a08bc8c062e20003.setContent(html_c5f782b5b48047eda16552be810f3189);
+        
+
+        marker_0058d2e8e3ee404fb1cd8608bade15c7.bindPopup(popup_619104b61d3e4ad0a08bc8c062e20003)
+        ;
+
+        
+    
+    
+            var marker_b20cbe536ee040f69d10d4407da139e7 = L.marker(
+                [37.57596678, 126.985832],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_0693688e941b47be8ef4850e21d3ee61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_088dab9f30904645ab707dc9afb192a2 = $(`<div id="html_088dab9f30904645ab707dc9afb192a2" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>서울노인복지센터</strong><br> 영업시간: 월-토 12:00-13:00 <br> 제공대상: 60세이상 가정형편이 어렵거나 부득이한 사정으로 식사를 거를 우려가 있는 어르신<br> 주소: 서울특별시 종로구 삼일대로 467(경운동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_0693688e941b47be8ef4850e21d3ee61.setContent(html_088dab9f30904645ab707dc9afb192a2);
+        
+
+        marker_b20cbe536ee040f69d10d4407da139e7.bindPopup(popup_0693688e941b47be8ef4850e21d3ee61)
+        ;
+
+        
+    
+    
+            var marker_92b5587355f64787b53ad22945872ced = L.marker(
+                [37.57103284, 126.985027],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_a26f8978597d4e5b8b57271d1b3f8925 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7a27cd9c22b499db684b295601689f3 = $(`<div id="html_f7a27cd9c22b499db684b295601689f3" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>사회복지법인 명휘원</strong><br> 영업시간: 월-토 12:00-13:00 <br> 제공대상: 60세이상 가정형편이 어렵거나 부득이한 사정으로 식사를 거를 우려가 있는 어르신<br> 주소: 서울특별시 종로구 종로11길 9-20(인사동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_a26f8978597d4e5b8b57271d1b3f8925.setContent(html_f7a27cd9c22b499db684b295601689f3);
+        
+
+        marker_92b5587355f64787b53ad22945872ced.bindPopup(popup_a26f8978597d4e5b8b57271d1b3f8925)
+        ;
+
+        
+    
+    
+            var marker_1656e8bfd96840d59ba08c4bc2f678b5 = L.marker(
+                [37.57719623, 127.0121786],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_2d06d56e272d42af8cd97089cde23592 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd895f0988464809aaabf8b75941a4db = $(`<div id="html_fd895f0988464809aaabf8b75941a4db" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>종로종합사회복지관</strong><br> 영업시간: 월-토 12:00-13:00 <br> 제공대상: 60세이상 가정형편이 어렵거나 부득이한 사정으로 식사를 거를 우려가 있는 어르신<br> 주소: 서울특별시 종로구 지봉로13길 82(창신동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_2d06d56e272d42af8cd97089cde23592.setContent(html_fd895f0988464809aaabf8b75941a4db);
+        
+
+        marker_1656e8bfd96840d59ba08c4bc2f678b5.bindPopup(popup_2d06d56e272d42af8cd97089cde23592)
+        ;
+
+        
+    
+    
+            var marker_26dc74e1ab2d4655b3c846208d8fff64 = L.marker(
+                [37.57666665, 127.006003],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_3bf4f960c5e64228af3b1128c53356f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_77623f99654a45f8a6c58c246de4d52d = $(`<div id="html_77623f99654a45f8a6c58c246de4d52d" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>종로노인종합복지관</strong><br> 영업시간: 월-토 12:00-13:00 <br> 제공대상: 60세이상 가정형편이 어렵거나 부득이한 사정으로 식사를 거를 우려가 있는 어르신<br> 주소: 서울특별시 종로구 율곡로19길 17-8(이화동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_3bf4f960c5e64228af3b1128c53356f5.setContent(html_77623f99654a45f8a6c58c246de4d52d);
+        
+
+        marker_26dc74e1ab2d4655b3c846208d8fff64.bindPopup(popup_3bf4f960c5e64228af3b1128c53356f5)
+        ;
+
+        
+    
+    
+            var marker_c14b6facc3ae4a9c99af9b5e55d3d6d8 = L.marker(
+                [37.6296739, 127.0411557],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_33912d90aa924837b632fdce09763411 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f56aa831a034982ab866a6a93d6d363 = $(`<div id="html_6f56aa831a034982ab866a6a93d6d363" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>번동3단지종합사회복지관</strong><br> 영업시간: 월-토 11:30-12:30 <br> 제공대상: 기초생활수급자, 차상위 계층 및 저소득 독거어르신<br> 주소: 서울특별시 강북구 오현로208<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_33912d90aa924837b632fdce09763411.setContent(html_6f56aa831a034982ab866a6a93d6d363);
+        
+
+        marker_c14b6facc3ae4a9c99af9b5e55d3d6d8.bindPopup(popup_33912d90aa924837b632fdce09763411)
+        ;
+
+        
+    
+    
+            var marker_ffa43d0cc9f14c60bc4d137fb38e7999 = L.marker(
+                [37.49319777, 127.0830002],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_1968734d311e4be4b202f68cb6defa77 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eed7aa11f86040988a75687e8f6780cb = $(`<div id="html_eed7aa11f86040988a75687e8f6780cb" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>대청경로당</strong><br> 영업시간: 월-금 11:30-12:30 <br> 제공대상: 만60세이상 결식우려가 있는 강남구 거주 저소득 어르신<br> 주소: 서울특별시 강남구 개포로124길 24<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_1968734d311e4be4b202f68cb6defa77.setContent(html_eed7aa11f86040988a75687e8f6780cb);
+        
+
+        marker_ffa43d0cc9f14c60bc4d137fb38e7999.bindPopup(popup_1968734d311e4be4b202f68cb6defa77)
+        ;
+
+        
+    
+    
+            var marker_c9caf9d7f04d4405a5447e8b94d261be = L.marker(
+                [37.46287702, 127.1014455],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_fa34f873d6ea4a748b493d88b0fcb17d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ec695368baf450e8eca1cc0b5843e1d = $(`<div id="html_0ec695368baf450e8eca1cc0b5843e1d" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>세곡리엔파크4단지 경로당</strong><br> 영업시간: 월-금 11:30-12:30 <br> 제공대상: 만60세이상 결식우려가 있는 강남구 거주 저소득 어르신<br> 주소: 서울특별시 강남구 헌릉로590길 88<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_fa34f873d6ea4a748b493d88b0fcb17d.setContent(html_0ec695368baf450e8eca1cc0b5843e1d);
+        
+
+        marker_c9caf9d7f04d4405a5447e8b94d261be.bindPopup(popup_fa34f873d6ea4a748b493d88b0fcb17d)
+        ;
+
+        
+    
+    
+            var marker_1ae0b9c13f324c439b264915a1c192d5 = L.marker(
+                [37.49315584, 127.0909926],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_fe735e5d5621483a9edddca4e4d5de02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0020d4daf802407e98d24f478bda9280 = $(`<div id="html_0020d4daf802407e98d24f478bda9280" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>대청종합사회복지관</strong><br> 영업시간: 월-금 11:00-12:00 <br> 제공대상: 만60세이상 결식우려가 있는 강남구 거주 저소득 어르신<br> 주소: 서울특별시 강남구 양재대로 55길 10<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_fe735e5d5621483a9edddca4e4d5de02.setContent(html_0020d4daf802407e98d24f478bda9280);
+        
+
+        marker_1ae0b9c13f324c439b264915a1c192d5.bindPopup(popup_fe735e5d5621483a9edddca4e4d5de02)
+        ;
+
+        
+    
+    
+            var marker_6516daeccf8b4eefa2760bf9c60436d2 = L.marker(
+                [37.48797908, 127.1056314],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_160e0ee0ff764ed1868bacf89513a868 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f24d2338782a45f3a7633c5f6a3d98bc = $(`<div id="html_f24d2338782a45f3a7633c5f6a3d98bc" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>수서종합사회복지관</strong><br> 영업시간: 월-금 11:30-12:30 <br> 제공대상: 만60세이상 결식우려가 있는 강남구 거주 저소득 어르신<br> 주소: 서울특별시 강남구 광평로 56길 11<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_160e0ee0ff764ed1868bacf89513a868.setContent(html_f24d2338782a45f3a7633c5f6a3d98bc);
+        
+
+        marker_6516daeccf8b4eefa2760bf9c60436d2.bindPopup(popup_160e0ee0ff764ed1868bacf89513a868)
+        ;
+
+        
+    
+    
+            var marker_4dd50db2041a43c29fe54fecd31d47ca = L.marker(
+                [37.49213604, 127.0997527],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_4826f60388224628b3d46c1b79edfa7b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64cb7f6981b949d2a03afd6372add45d = $(`<div id="html_64cb7f6981b949d2a03afd6372add45d" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>수서명화종합사회복지관</strong><br> 영업시간: 월-금 11:30-12:30 <br> 제공대상: 만60세이상 결식우려가 있는 강남구 거주 저소득 어르신<br> 주소: 서울특별시 강남구 광평로 51길 49<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_4826f60388224628b3d46c1b79edfa7b.setContent(html_64cb7f6981b949d2a03afd6372add45d);
+        
+
+        marker_4dd50db2041a43c29fe54fecd31d47ca.bindPopup(popup_4826f60388224628b3d46c1b79edfa7b)
+        ;
+
+        
+    
+    
+            var marker_92d911d6d5504f7fb49e336c63db7ded = L.marker(
+                [37.50978671, 127.0432194],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_da8b4666fd844fe596079fcea78f9458 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c11788886995494e85513327ba5add46 = $(`<div id="html_c11788886995494e85513327ba5add46" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>강남시니어플라자</strong><br> 영업시간: 월-금 11:30-13:00 <br> 제공대상: 만60세이상 결식우려가 있는 강남구 거주 저소득 어르신<br> 주소: 서울특별시 강남구 봉은사로 332<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_da8b4666fd844fe596079fcea78f9458.setContent(html_c11788886995494e85513327ba5add46);
+        
+
+        marker_92d911d6d5504f7fb49e336c63db7ded.bindPopup(popup_da8b4666fd844fe596079fcea78f9458)
+        ;
+
+        
+    
+    
+            var marker_62f15a6525f94ecb908fe2a6ebe2f31e = L.marker(
+                [37.49453859, 127.0418311],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_1db9bc218d554901b67246604891cd41 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d9a9b75baba449f88800c96603643c9 = $(`<div id="html_1d9a9b75baba449f88800c96603643c9" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>역삼노인복지센터</strong><br> 영업시간: 월-금 11:30-12:30 <br> 제공대상: 만60세이상 결식우려가 있는 강남구 거주 저소득 어르신<br> 주소: 서울특별시 강남구 도곡로 27길 27<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_1db9bc218d554901b67246604891cd41.setContent(html_1d9a9b75baba449f88800c96603643c9);
+        
+
+        marker_62f15a6525f94ecb908fe2a6ebe2f31e.bindPopup(popup_1db9bc218d554901b67246604891cd41)
+        ;
+
+        
+    
+    
+            var marker_14ae7fdf79c544108cede6f77a70c1a8 = L.marker(
+                [37.51206587, 127.0260872],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_cc2683fd787e4cf6baa705f05816b015 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_065b031de0a1446d9f5e45386605019c = $(`<div id="html_065b031de0a1446d9f5e45386605019c" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>논현노인종합복지관</strong><br> 영업시간: 월-금 11:30-12:50 <br> 제공대상: 만60세이상 결식우려가 있는 강남구 거주 저소득 어르신<br> 주소: 서울특별시 강남구 강남대로128길 59<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_cc2683fd787e4cf6baa705f05816b015.setContent(html_065b031de0a1446d9f5e45386605019c);
+        
+
+        marker_14ae7fdf79c544108cede6f77a70c1a8.bindPopup(popup_cc2683fd787e4cf6baa705f05816b015)
+        ;
+
+        
+    
+    
+            var marker_f91ca3465afd46e292b582093417a990 = L.marker(
+                [37.643746, 127.076731],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_d914e4ff47434973b2b56d4e79c1923e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5034da958cd04f338d694414c5feafef = $(`<div id="html_5034da958cd04f338d694414c5feafef" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>서울기능장애인협회 노원지부</strong><br> 영업시간: 월-금 11:30- <br> 제공대상: 장애인<br> 주소: 서울특별시 노원구 한글비석로 182<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_d914e4ff47434973b2b56d4e79c1923e.setContent(html_5034da958cd04f338d694414c5feafef);
+        
+
+        marker_f91ca3465afd46e292b582093417a990.bindPopup(popup_d914e4ff47434973b2b56d4e79c1923e)
+        ;
+
+        
+    
+    
+            var marker_8d14f170072345aca79373d07f0f97e9 = L.marker(
+                [37.637529, 127.069874],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_10c0b5f261354fe0b62335b383951a21 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d7094a427954f018d4eca84f1fe4e95 = $(`<div id="html_4d7094a427954f018d4eca84f1fe4e95" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>참아름교회</strong><br> 영업시간: 월-일 12:00- <br> 제공대상: 저소득 노인<br> 주소: 서울특별시 노원구 노원구 공릉로 351<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_10c0b5f261354fe0b62335b383951a21.setContent(html_4d7094a427954f018d4eca84f1fe4e95);
+        
+
+        marker_8d14f170072345aca79373d07f0f97e9.bindPopup(popup_10c0b5f261354fe0b62335b383951a21)
+        ;
+
+        
+    
+    
+            var marker_03a53ddc4229459d85d7e213505038f9 = L.marker(
+                [37.670955, 127.079221],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_fa6252c8a4614c2b84868bf4b975bf00 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08b85735f0604e5d83cc4569bb4cf331 = $(`<div id="html_08b85735f0604e5d83cc4569bb4cf331" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>아름다운 세상 모두함께</strong><br> 영업시간: 화,목,토 화목17:30-, 토12:00- <br> 제공대상: 결식 노인,노숙자<br> 주소: 서울특별시 노원구 상계로37길 11<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_fa6252c8a4614c2b84868bf4b975bf00.setContent(html_08b85735f0604e5d83cc4569bb4cf331);
+        
+
+        marker_03a53ddc4229459d85d7e213505038f9.bindPopup(popup_fa6252c8a4614c2b84868bf4b975bf00)
+        ;
+
+        
+    
+    
+            var marker_d394d3219fc54544bdb36bbb66927b7d = L.marker(
+                [37.4501638, 126.8977638],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_8c5c4a8013624980bb7a507ae5f3a3e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c300fecdcb84340b841f5987941cebb = $(`<div id="html_1c300fecdcb84340b841f5987941cebb" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>금천노인종합복지관</strong><br> 영업시간: 월-토 11:20-12:40 <br> 제공대상: 저소득 어르신<br> 주소: 서울특별시 금천구 시흥대로51길 93-32(시흥동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_8c5c4a8013624980bb7a507ae5f3a3e3.setContent(html_1c300fecdcb84340b841f5987941cebb);
+        
+
+        marker_d394d3219fc54544bdb36bbb66927b7d.bindPopup(popup_8c5c4a8013624980bb7a507ae5f3a3e3)
+        ;
+
+        
+    
+    
+            var marker_458587a911994217b01499fcf609baf4 = L.marker(
+                [37.476852, 126.891799],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_4fb1eaea70fc45dfaa45d372ea30826c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e054e7db69474c2b813a076ff0de2ffa = $(`<div id="html_e054e7db69474c2b813a076ff0de2ffa" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>금천누리종합사회복지관</strong><br> 영업시간: 월-토 11:20-12:30 <br> 제공대상: 저소득 어르신<br> 주소: 서울특별시 금천구 가산로 129(가산동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_4fb1eaea70fc45dfaa45d372ea30826c.setContent(html_e054e7db69474c2b813a076ff0de2ffa);
+        
+
+        marker_458587a911994217b01499fcf609baf4.bindPopup(popup_4fb1eaea70fc45dfaa45d372ea30826c)
+        ;
+
+        
+    
+    
+            var marker_b3ee6dc495854a399e541008bebc4fbb = L.marker(
+                [37.4573875, 126.8865394],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_89612c369b1a44ba9f0e92cea68ec450 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00671b3ed0eb444e8879bcb90064ed8a = $(`<div id="html_00671b3ed0eb444e8879bcb90064ed8a" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>금천한내어르신복지센터</strong><br> 영업시간: 월-토 11:30-13:00 <br> 제공대상: 저소득 어르신<br> 주소: 서울특별시 금천구 한내로 69-15(독산동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_89612c369b1a44ba9f0e92cea68ec450.setContent(html_00671b3ed0eb444e8879bcb90064ed8a);
+        
+
+        marker_b3ee6dc495854a399e541008bebc4fbb.bindPopup(popup_89612c369b1a44ba9f0e92cea68ec450)
+        ;
+
+        
+    
+    
+            var marker_02641ca89f0d4a90a73c241b891a8c53 = L.marker(
+                [37.46951291, 126.9064763],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_64443f871436464b9dc6a406fb3323c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa4604d80f9442e88dd15b445f91c71e = $(`<div id="html_aa4604d80f9442e88dd15b445f91c71e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>금천호암노인종합복지관</strong><br> 영업시간: 월-토 11:30-13:00 <br> 제공대상: 저소득 어르신<br> 주소: 서울특별시 금천구 독산로72길 86-5(독산동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_64443f871436464b9dc6a406fb3323c3.setContent(html_aa4604d80f9442e88dd15b445f91c71e);
+        
+
+        marker_02641ca89f0d4a90a73c241b891a8c53.bindPopup(popup_64443f871436464b9dc6a406fb3323c3)
+        ;
+
+        
+    
+    
+            var marker_2fd7b815f5cb4e9dac7d620116f15180 = L.marker(
+                [37.4751323, 126.9002445],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_583f9bdc031441cd9c6af4aa90b79b34 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_496ab5d454b341dabe3300c4a50eddc3 = $(`<div id="html_496ab5d454b341dabe3300c4a50eddc3" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>살구여성회</strong><br> 영업시간: 월-토 11:00-12:30 <br> 제공대상: 저소득 어르신<br> 주소: 서울특별시 금천구 시흥대로148길 27(독산동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_583f9bdc031441cd9c6af4aa90b79b34.setContent(html_496ab5d454b341dabe3300c4a50eddc3);
+        
+
+        marker_2fd7b815f5cb4e9dac7d620116f15180.bindPopup(popup_583f9bdc031441cd9c6af4aa90b79b34)
+        ;
+
+        
+    
+    
+            var marker_a75fefcbd8784b958020e2608afd88dc = L.marker(
+                [37.4504161, 126.9131787],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_25460f551a574d14acb21a3326d7aca6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_507419aa16e840be944c59c4eece8bcd = $(`<div id="html_507419aa16e840be944c59c4eece8bcd" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>제일성결교회</strong><br> 영업시간: 월-토 12:00-13:00 <br> 제공대상: 저소득 어르신<br> 주소: 서울특별시 금천구 탑골로2길 56(시흥동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_25460f551a574d14acb21a3326d7aca6.setContent(html_507419aa16e840be944c59c4eece8bcd);
+        
+
+        marker_a75fefcbd8784b958020e2608afd88dc.bindPopup(popup_25460f551a574d14acb21a3326d7aca6)
+        ;
+
+        
+    
+    
+            var marker_3a2258b349a94e0caf9ed577685b20c5 = L.marker(
+                [37.45113975, 126.9129242],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_5372ccd3521748df9d9e13269edfec68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd34dcf9f6fb41e289c872139f21e34e = $(`<div id="html_fd34dcf9f6fb41e289c872139f21e34e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>청담종합사회복지관</strong><br> 영업시간: 월-토 11:00-13:00 <br> 제공대상: 저소득 어르신<br> 주소: 서울특별시 금천구 금하로29길 26(시흥동)<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_5372ccd3521748df9d9e13269edfec68.setContent(html_fd34dcf9f6fb41e289c872139f21e34e);
+        
+
+        marker_3a2258b349a94e0caf9ed577685b20c5.bindPopup(popup_5372ccd3521748df9d9e13269edfec68)
+        ;
+
+        
+    
+    
+            var marker_c573433a9a914ac9bfd8a909d28f5e22 = L.marker(
+                [37.50039208, 126.9291105],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_fadccfc36a404b6a84e3f352711284d0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ebc7238a4c4444178c54e065f52c6ea5 = $(`<div id="html_ebc7238a4c4444178c54e065f52c6ea5" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>동작노인종합복지관</strong><br> 영업시간: 월-토 11:30-13:00 <br> 제공대상: 만60세 이상 결식우려가 있는 저소득 어르신<br> 주소: 서울특별시 동작구 상도로11길 7<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_fadccfc36a404b6a84e3f352711284d0.setContent(html_ebc7238a4c4444178c54e065f52c6ea5);
+        
+
+        marker_c573433a9a914ac9bfd8a909d28f5e22.bindPopup(popup_fadccfc36a404b6a84e3f352711284d0)
+        ;
+
+        
+    
+    
+            var marker_2c94e39caeac4d57ba3d991968d39e85 = L.marker(
+                [37.50249656, 126.9496599],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_f459742de9764803aa016d1b57bd1912 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e826c441f96a406fb14dc40f2dc52035 = $(`<div id="html_e826c441f96a406fb14dc40f2dc52035" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>상도종합사회복지관</strong><br> 영업시간: 월-토 11:00-12:00 <br> 제공대상: 만60세 이상 결식우려가 있는 저소득 어르신<br> 주소: 서울특별시 동작구 상도로39가길 7<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_f459742de9764803aa016d1b57bd1912.setContent(html_e826c441f96a406fb14dc40f2dc52035);
+        
+
+        marker_2c94e39caeac4d57ba3d991968d39e85.bindPopup(popup_f459742de9764803aa016d1b57bd1912)
+        ;
+
+        
+    
+    
+            var marker_757b69623be549ef819dd0ea43aca9dc = L.marker(
+                [37.51053278, 126.9568887],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_51cd9a4eda5a4c6da38179af5dd1c507 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a776d0d7dd4647ed80f0e98c07981db3 = $(`<div id="html_a776d0d7dd4647ed80f0e98c07981db3" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>본동종합사회복지관</strong><br> 영업시간: 월-토 11:00-12:00 <br> 제공대상: 만60세 이상 결식우려가 있는 저소득 어르신<br> 주소: 서울특별시 동작구 노량진로32길 79<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_51cd9a4eda5a4c6da38179af5dd1c507.setContent(html_a776d0d7dd4647ed80f0e98c07981db3);
+        
+
+        marker_757b69623be549ef819dd0ea43aca9dc.bindPopup(popup_51cd9a4eda5a4c6da38179af5dd1c507)
+        ;
+
+        
+    
+    
+            var marker_0bd0443d52894aa3ba50c8d9dd14b161 = L.marker(
+                [37.49312014, 126.9768776],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_3d006fec9d694ae7aba4bcff5c4a97f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44dd627250d4431c9320979f8eb0870e = $(`<div id="html_44dd627250d4431c9320979f8eb0870e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>동작이수사회복지관</strong><br> 영업시간: 월-토 11:00-12:00 <br> 제공대상: 만60세 이상 결식우려가 있는 저소득 어르신<br> 주소: 서울특별시 동작구 동작대로35차길 7<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_3d006fec9d694ae7aba4bcff5c4a97f8.setContent(html_44dd627250d4431c9320979f8eb0870e);
+        
+
+        marker_0bd0443d52894aa3ba50c8d9dd14b161.bindPopup(popup_3d006fec9d694ae7aba4bcff5c4a97f8)
+        ;
+
+        
+    
+    
+            var marker_0acd7865f9b54e78b8160763a66c8adb = L.marker(
+                [37.48327274, 126.9714535],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_96557786968f4ff7b6be0b2f7df1707a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e7fe195ab72344fcad182ebbb4c0604c = $(`<div id="html_e7fe195ab72344fcad182ebbb4c0604c" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>사당종합사회복지관</strong><br> 영업시간: 월-토 11:20-12:30 <br> 제공대상: 만60세 이상 결식우려가 있는 저소득 어르신<br> 주소: 서울특별시 동작구 사당로14길 20<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_96557786968f4ff7b6be0b2f7df1707a.setContent(html_e7fe195ab72344fcad182ebbb4c0604c);
+        
+
+        marker_0acd7865f9b54e78b8160763a66c8adb.bindPopup(popup_96557786968f4ff7b6be0b2f7df1707a)
+        ;
+
+        
+    
+    
+            var marker_3f4aff5e95704da2b9aa6cba9a835882 = L.marker(
+                [37.50571412, 126.9334168],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_5d87e905a8174b6eb32c63e1edef69dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b00433c8765477f8c7e9e0511ea006f = $(`<div id="html_3b00433c8765477f8c7e9e0511ea006f" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>동작종합사회복지관</strong><br> 영업시간: 월-토 11:00-12:00 <br> 제공대상: 만60세 이상 결식우려가 있는 저소득 어르신<br> 주소: 서울특별시 동작구 등용로47<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_5d87e905a8174b6eb32c63e1edef69dd.setContent(html_3b00433c8765477f8c7e9e0511ea006f);
+        
+
+        marker_3f4aff5e95704da2b9aa6cba9a835882.bindPopup(popup_5d87e905a8174b6eb32c63e1edef69dd)
+        ;
+
+        
+    
+    
+            var marker_6ec30bbae1b843ea8f6100a28b7e4bc3 = L.marker(
+                [37.5099255, 126.9304271],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_e7d0b7fe96644d9db3736bc0b5f997bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1fd978792571424fa723d9f46d6bc38b = $(`<div id="html_1fd978792571424fa723d9f46d6bc38b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>대방종합사회복지관</strong><br> 영업시간: 월-토 11:30-12:30 <br> 제공대상: 만60세 이상 결식우려가 있는 저소득 어르신<br> 주소: 서울특별시 동작구 여의대방로44길 47<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_e7d0b7fe96644d9db3736bc0b5f997bf.setContent(html_1fd978792571424fa723d9f46d6bc38b);
+        
+
+        marker_6ec30bbae1b843ea8f6100a28b7e4bc3.bindPopup(popup_e7d0b7fe96644d9db3736bc0b5f997bf)
+        ;
+
+        
+    
+    
+            var marker_43270dd39d5749b2a820564f6fd2746e = L.marker(
+                [37.47701786, 126.9798536],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_1510fc93656e4793b4ee8aa39aa6bfae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f13152ddcbe453498803ccf62509acd = $(`<div id="html_7f13152ddcbe453498803ccf62509acd" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>사당어르신종합복지관</strong><br> 영업시간: 월-금 11:30-12:50 <br> 제공대상: 만60세 이상 결식우려가 있는 저소득 어르신<br> 주소: 서울특별시 동작구 남부순환로2081<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_1510fc93656e4793b4ee8aa39aa6bfae.setContent(html_7f13152ddcbe453498803ccf62509acd);
+        
+
+        marker_43270dd39d5749b2a820564f6fd2746e.bindPopup(popup_1510fc93656e4793b4ee8aa39aa6bfae)
+        ;
+
+        
+    
+    
+            var marker_16ba7740945c43bbb6c5b13e264daca5 = L.marker(
+                [37.50645811, 126.9513899],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_b9c3038ea8434ccca28c4d1563fe50c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abdc52c94d2c46d4b130df5d6b45a089 = $(`<div id="html_abdc52c94d2c46d4b130df5d6b45a089" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>상도은빛어르신복지관</strong><br> 영업시간: 월-금 11:30-12:50 <br> 제공대상: 만60세 이상 결식우려가 있는 저소득 어르신<br> 주소: 서울특별시 동작구 매봉로36<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_b9c3038ea8434ccca28c4d1563fe50c3.setContent(html_abdc52c94d2c46d4b130df5d6b45a089);
+        
+
+        marker_16ba7740945c43bbb6c5b13e264daca5.bindPopup(popup_b9c3038ea8434ccca28c4d1563fe50c3)
+        ;
+
+        
+    
+    
+            var marker_02438b4e13ac4b62a45f710a095ae031 = L.marker(
+                [37.483248, 127.040797],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_5ac401e524224ad3b2f5fba600930903 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9bcf3e4d46cb4088a2bfed420c0c86a0 = $(`<div id="html_9bcf3e4d46cb4088a2bfed420c0c86a0" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>서초구립 양재노인종합복지관</strong><br> 영업시간: 월,수 변동 <br> 제공대상: 선정 기준에 부합하는 만60세 이상 어르신<br> 주소: 서울특별시 서초구 강남대로30길 73-7 서초노인종합복지관<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_5ac401e524224ad3b2f5fba600930903.setContent(html_9bcf3e4d46cb4088a2bfed420c0c86a0);
+        
+
+        marker_02438b4e13ac4b62a45f710a095ae031.bindPopup(popup_5ac401e524224ad3b2f5fba600930903)
+        ;
+
+        
+    
+    
+            var marker_960ec1dd7b554f8cb0d2e2063f5e7494 = L.marker(
+                [37.48076743, 126.982713],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_816414aedee94984a52980ea84ee0db2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c40eec19a744a808309befcdfba5bfa = $(`<div id="html_2c40eec19a744a808309befcdfba5bfa" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>방배노인종합복지관</strong><br> 영업시간: 화,목 변동 <br> 제공대상: 선정 기준에 부합하는 만60세 이상 어르신<br> 주소: 서울특별시 서초구 방배천로 48 방배노인종합복지관<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_816414aedee94984a52980ea84ee0db2.setContent(html_2c40eec19a744a808309befcdfba5bfa);
+        
+
+        marker_960ec1dd7b554f8cb0d2e2063f5e7494.bindPopup(popup_816414aedee94984a52980ea84ee0db2)
+        ;
+
+        
+    
+    
+            var marker_4fdcc5110f464c90b51d12777a8e0f72 = L.marker(
+                [37.49232427, 127.016811],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_73c593f70a874abdb40f6c267ed76710 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_901ae32345e743d2ba708b22e4726f9a = $(`<div id="html_901ae32345e743d2ba708b22e4726f9a" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>서초구립 중앙노인종합복지관</strong><br> 영업시간: 월,수 변동 <br> 제공대상: 선정 기준에 부합하는 만60세 이상 어르신<br> 주소: 서울특별시 서초구 서초대로54길 45 서초구립중앙노인복지관<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_73c593f70a874abdb40f6c267ed76710.setContent(html_901ae32345e743d2ba708b22e4726f9a);
+        
+
+        marker_4fdcc5110f464c90b51d12777a8e0f72.bindPopup(popup_73c593f70a874abdb40f6c267ed76710)
+        ;
+
+        
+    
+    
+            var marker_efa723bfffc84152b4a958be455e7e4f = L.marker(
+                [37.48452702, 127.036143],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_380d7f4acf46453187853645b3581470 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f25d09ed9cc45b4bce7fd1922efec6c = $(`<div id="html_8f25d09ed9cc45b4bce7fd1922efec6c" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>서초구립 양재종합사회복지관</strong><br> 영업시간: 월,목 변동 <br> 제공대상: 선정 기준에 부합하는 만60세 이상 어르신<br> 주소: 서울특별시 서초구 남부순환로 2610<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_380d7f4acf46453187853645b3581470.setContent(html_8f25d09ed9cc45b4bce7fd1922efec6c);
+        
+
+        marker_efa723bfffc84152b4a958be455e7e4f.bindPopup(popup_380d7f4acf46453187853645b3581470)
+        ;
+
+        
+    
+    
+            var marker_ad5943aea66d42d49d95f89183a7afbc = L.marker(
+                [37.5701998, 126.923898],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_dd1973bad62946cfb239ed25a0b56056 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c396c58166064ee1abd03fc13bf52d86 = $(`<div id="html_c396c58166064ee1abd03fc13bf52d86" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>종로 천사무료급식소</strong><br> 영업시간: 화,목,토 11:00-13:00 <br> 제공대상: nan<br> 주소: 서울특별시 종로구 돈화문로4길 29<br> 비고:    홈페이지: <a href=http://1004n.co.kr>http://1004n.co.kr</a> </pre>     </body>     </div>`)[0];
+            popup_dd1973bad62946cfb239ed25a0b56056.setContent(html_c396c58166064ee1abd03fc13bf52d86);
+        
+
+        marker_ad5943aea66d42d49d95f89183a7afbc.bindPopup(popup_dd1973bad62946cfb239ed25a0b56056)
+        ;
+
+        
+    
+    
+            var marker_0104134efa20470ca50b2930f5b59864 = L.marker(
+                [37.4975911, 126.9172043],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_d32edece4f0c43c482111b6beca05484 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34e8acfb44844beeb2df1b9c0d9555ab = $(`<div id="html_34e8acfb44844beeb2df1b9c0d9555ab" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>보라매 천사무료급식소</strong><br> 영업시간: 화,목,토 11:00-13:00 <br> 제공대상: nan<br> 주소: 서울특별시 영등포구 여의대방로 95<br> 비고:    홈페이지: <a href=http://1004n.co.kr>http://1004n.co.kr</a> </pre>     </body>     </div>`)[0];
+            popup_d32edece4f0c43c482111b6beca05484.setContent(html_34e8acfb44844beeb2df1b9c0d9555ab);
+        
+
+        marker_0104134efa20470ca50b2930f5b59864.bindPopup(popup_d32edece4f0c43c482111b6beca05484)
+        ;
+
+        
+    
+    
+            var marker_283e071399f2485382f838def0aa2cbc = L.marker(
+                [37.559696, 126.903807],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_6430dc0183da4c38a58d388c58de65f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9524e1125104967814bf81fd3937ba7 = $(`<div id="html_a9524e1125104967814bf81fd3937ba7" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>무료급식소 보릿고개</strong><br> 영업시간: 화,목 11:00-13:00 <br> 제공대상: nan<br> 주소: 서울특별시 마포구 망원로 11길 48<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_6430dc0183da4c38a58d388c58de65f2.setContent(html_a9524e1125104967814bf81fd3937ba7);
+        
+
+        marker_283e071399f2485382f838def0aa2cbc.bindPopup(popup_6430dc0183da4c38a58d388c58de65f2)
+        ;
+
+        
+    
+    
+            var marker_4f5f74b58c1c4db8a4565468c96b61b6 = L.marker(
+                [37.5709148, 126.9867034],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_d9d412211a2f4d4f828c1085e6a94b28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1122bb019ccd4a6dbb135c4599dff56e = $(`<div id="html_1122bb019ccd4a6dbb135c4599dff56e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>사회복지원각</strong><br> 영업시간: 월-일 11:00-13:00 <br> 제공대상: nan<br> 주소: 서울특별시 종로구 종로17길 12<br> 비고:    홈페이지: <a href=http://wongakwel.org>http://wongakwel.org</a> </pre>     </body>     </div>`)[0];
+            popup_d9d412211a2f4d4f828c1085e6a94b28.setContent(html_1122bb019ccd4a6dbb135c4599dff56e);
+        
+
+        marker_4f5f74b58c1c4db8a4565468c96b61b6.bindPopup(popup_d9d412211a2f4d4f828c1085e6a94b28)
+        ;
+
+        
+    
+    
+            var marker_41f57e6c29754225b252c56252b206fe = L.marker(
+                [37.519508, 126.9053325],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_d7d33de1467a4a459e5ec6769dc8d25f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35c3ca3e75fa470092a9587474ed4256 = $(`<div id="html_35c3ca3e75fa470092a9587474ed4256" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>영등포 천사무료급식소</strong><br> 영업시간: 월,수,토 11:00-13:00 <br> 제공대상: nan<br> 주소: 서울특별시 영등포구 영등포로 216<br> 비고:    홈페이지: <a href=http://1004n.co.kr>http://1004n.co.kr</a> </pre>     </body>     </div>`)[0];
+            popup_d7d33de1467a4a459e5ec6769dc8d25f.setContent(html_35c3ca3e75fa470092a9587474ed4256);
+        
+
+        marker_41f57e6c29754225b252c56252b206fe.bindPopup(popup_d7d33de1467a4a459e5ec6769dc8d25f)
+        ;
+
+        
+    
+    
+            var marker_f0a93788d2c8490ba58570cb46923a15 = L.marker(
+                [37.6203399, 127.0231742],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_2b881a6f2b224ee7accfd115a5e29ff2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94ff47db4057455faf96ab837826b610 = $(`<div id="html_94ff47db4057455faf96ab837826b610" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>자비의집</strong><br> 영업시간: 월-토 11:00-13:00 <br> 제공대상: nan<br> 주소: 서울특별시 강북구 도봉로29길 90<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_2b881a6f2b224ee7accfd115a5e29ff2.setContent(html_94ff47db4057455faf96ab837826b610);
+        
+
+        marker_f0a93788d2c8490ba58570cb46923a15.bindPopup(popup_2b881a6f2b224ee7accfd115a5e29ff2)
+        ;
+
+        
+    
+    
+            var marker_d0e4820abc9640a08f7380a672f4fbe8 = L.marker(
+                [37.5262142, 126.9616192],
+                {}
+            ).addTo(feature_group_sub_group_0558d3a2a75d402a8400e6ff7460b1b5);
+        
+    
+        var popup_1efcbec53efe41a8b754b78fd12a4623 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27f186d99a7643ac8285fdd82e21ddde = $(`<div id="html_27f186d99a7643ac8285fdd82e21ddde" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>          </head>     <body>     <pre> <strong>하나님의집</strong><br> 영업시간: 월-금 11:00-12:00, 17:00-18:00 <br> 제공대상: nan<br> 주소: 서울특별시 용산구 한강로3가 40-682<br> 비고:    홈페이지: <a href= > </a> </pre>     </body>     </div>`)[0];
+            popup_1efcbec53efe41a8b754b78fd12a4623.setContent(html_27f186d99a7643ac8285fdd82e21ddde);
+        
+
+        marker_d0e4820abc9640a08f7380a672f4fbe8.bindPopup(popup_1efcbec53efe41a8b754b78fd12a4623)
+        ;
+
+        
+    
+</script>

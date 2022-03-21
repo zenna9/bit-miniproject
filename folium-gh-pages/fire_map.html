@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b6fa8baad1004dce84935634f1d1098d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b6fa8baad1004dce84935634f1d1098d" ></div>
+        
+</body>
+<script>    
+    
+            var map_b6fa8baad1004dce84935634f1d1098d = L.map(
+                "map_b6fa8baad1004dce84935634f1d1098d",
+                {
+                    center: [37.48987, 127.02188],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2589f704d70f4b80ac332997e7259c15 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b6fa8baad1004dce84935634f1d1098d);
+        
+    
+            var marker_189a5b217c9b4261aab999907d98f881 = L.marker(
+                [37.48987, 127.02188],
+                {}
+            ).addTo(map_b6fa8baad1004dce84935634f1d1098d);
+        
+    
+            var icon_946105ca815e4aaaad24d8b06e86d773 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_189a5b217c9b4261aab999907d98f881.setIcon(icon_946105ca815e4aaaad24d8b06e86d773);
+        
+    
+            var marker_cluster_c9b97ce1721f4af384d55b4a271fc88c = L.markerClusterGroup(
+                {}
+            );
+            map_b6fa8baad1004dce84935634f1d1098d.addLayer(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+            var marker_edd7bb0652ef46958391dd220d66ab9a = L.marker(
+                [37.55662641, 127.1687802],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_9a59672fe1f049b0949bc4951ea09e82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dba733ed239a456f89dff50a7529756a = $(`<div id="html_dba733ed239a456f89dff50a7529756a" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">통닭&강동생족발보쌈</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com//file/store/624/2dd385a4bc3045379d557d332228aaca.jpg" , style="width:200px;height:150px;">     </p> 주소: 서울 강동구 고덕로 390<br> 영업시간: 점심12시~밤12시<br> 휴업일: 연중무휴 , 포장 배달 전문점<br> 제공품목: 아동=통닭1마리무료&전메뉴50%할인<br> 제공대상: 결식아동,독거노인,소방관은 전메뉴 5%할인 및 포장 배달 전문점입니다.<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/624  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_9a59672fe1f049b0949bc4951ea09e82.setContent(html_dba733ed239a456f89dff50a7529756a);
+        
+
+        marker_edd7bb0652ef46958391dd220d66ab9a.bindPopup(popup_9a59672fe1f049b0949bc4951ea09e82)
+        ;
+
+        
+    
+    
+            var marker_36ca79d6c53b4a7aba5a9acb26645167 = L.marker(
+                [37.63513651, 127.0266419],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_93294216a74a4416b2fd4bf56adb760e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ddaf7c9187474cec9c6310651cf08585 = $(`<div id="html_ddaf7c9187474cec9c6310651cf08585" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">인생푸드</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com/images/header_logo.png" , style="width:200px;height:150px;">     </p> 주소: 서울 강북구 덕릉로 115<br> 영업시간: 확인요망<br> 휴업일: nan<br> 제공품목: nan<br> 제공대상: 결식아동,입양보류아동,무연고아동 및 nan<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/844  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_93294216a74a4416b2fd4bf56adb760e.setContent(html_ddaf7c9187474cec9c6310651cf08585);
+        
+
+        marker_36ca79d6c53b4a7aba5a9acb26645167.bindPopup(popup_93294216a74a4416b2fd4bf56adb760e)
+        ;
+
+        
+    
+    
+            var marker_0b244ca6a4464f2883272a1c4149fba8 = L.marker(
+                [37.48272396, 126.9352285],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_fc38f2c9fb1844d8ace6862c691addec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4b8b6ceda5c4254b5ae8bdd90514752 = $(`<div id="html_c4b8b6ceda5c4254b5ae8bdd90514752" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">바다가내손아귀</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com//file/store/753/081fbea249c040f6a4eb235dc32141df.jpg" , style="width:200px;height:150px;">     </p> 주소: 서울 관악구 신림동 1741<br> 영업시간: 24시간<br> 휴업일: 없음<br> 제공품목: nan<br> 제공대상: 결식아동,소개추천 및 가족포함<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/753  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_fc38f2c9fb1844d8ace6862c691addec.setContent(html_c4b8b6ceda5c4254b5ae8bdd90514752);
+        
+
+        marker_0b244ca6a4464f2883272a1c4149fba8.bindPopup(popup_fc38f2c9fb1844d8ace6862c691addec)
+        ;
+
+        
+    
+    
+            var marker_2377df18d2b14bb8a637cf469f96d963 = L.marker(
+                [37.61941061, 127.0732331],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_91282a4d752d482c871b9d94a2df0ec2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2565c6b899f49b19da5d2da8ce8e527 = $(`<div id="html_a2565c6b899f49b19da5d2da8ce8e527" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">슈마스터태릉점</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com//file/store/405/a054fb144a25454ca46ce01a7fd4666f.jpg" , style="width:200px;height:150px;">     </p> 주소: 서울 노원구 동일로173가길 25<br> 영업시간: 09~20<br> 휴업일: 일요밀 휴무<br> 제공품목: nan<br> 제공대상: 결식아동,독거노인,산악구조대, 산림청, 및 동반 1인<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/405  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_91282a4d752d482c871b9d94a2df0ec2.setContent(html_a2565c6b899f49b19da5d2da8ce8e527);
+        
+
+        marker_2377df18d2b14bb8a637cf469f96d963.bindPopup(popup_91282a4d752d482c871b9d94a2df0ec2)
+        ;
+
+        
+    
+    
+            var marker_bbe81a14e77e4f1a9cfb4c61e7bc43ec = L.marker(
+                [37.68184246, 127.0569993],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_da001754001c4771944976feaa44dadd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_779e25311ab145c3810c0a864d59e846 = $(`<div id="html_779e25311ab145c3810c0a864d59e846" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">용인대금메달태권도</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com/images/header_logo.png" , style="width:200px;height:150px;">     </p> 주소: 서울 노원구 동일로250길 18<br> 영업시간: 12:00 ~ 22:00<br> 휴업일: 토. 일. 공휴일<br> 제공품목: nan<br> 제공대상: 결식아동,사회적배려대상자 및 아이 본인만<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/892  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_da001754001c4771944976feaa44dadd.setContent(html_779e25311ab145c3810c0a864d59e846);
+        
+
+        marker_bbe81a14e77e4f1a9cfb4c61e7bc43ec.bindPopup(popup_da001754001c4771944976feaa44dadd)
+        ;
+
+        
+    
+    
+            var marker_70447dabf3c74e3b98f3e492c711da6f = L.marker(
+                [37.66457204, 127.0359669],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_cbf5b42b79314cb4993c01bcee9a75ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_859cc46244314239ba16f719042d2934 = $(`<div id="html_859cc46244314239ba16f719042d2934" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">워너비굿즈</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com//file/store/808/31e5440a253240889804e9dea0e5e05e.jpg" , style="width:200px;height:150px;">     </p> 주소: 서울 도봉구 도당로 76<br> 영업시간: 확인요망<br> 휴업일: 토,일<br> 제공품목: 어린이 구리사마스크<br> 제공대상: 마스크가 필요한 어린이 및 동반 1인<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/808  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_cbf5b42b79314cb4993c01bcee9a75ab.setContent(html_859cc46244314239ba16f719042d2934);
+        
+
+        marker_70447dabf3c74e3b98f3e492c711da6f.bindPopup(popup_cbf5b42b79314cb4993c01bcee9a75ab)
+        ;
+
+        
+    
+    
+            var marker_6b16c9f1f27647eb8321c9539351c74a = L.marker(
+                [37.58910135, 127.0531211],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_b8a11d88c8314e14bc4d1a7eecc087e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c05383dc2a0b45c9895c6719041b73fa = $(`<div id="html_c05383dc2a0b45c9895c6719041b73fa" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">예술의악당음악학원</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com//file/store/782/f5e824b0dd7348f99f2ad08e4d4825e0.jpeg" , style="width:200px;height:150px;">     </p> 주소: 서울 동대문구 이문로1길 16-3<br> 영업시간: 오후2시부터 7시<br> 휴업일: 토,일,공휴일<br> 제공품목: 피아노 교습비 90% 감면<br> 제공대상: 결식아동,독거노인,기초생활수급자  및 아이 본인만<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/782  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_b8a11d88c8314e14bc4d1a7eecc087e8.setContent(html_c05383dc2a0b45c9895c6719041b73fa);
+        
+
+        marker_6b16c9f1f27647eb8321c9539351c74a.bindPopup(popup_b8a11d88c8314e14bc4d1a7eecc087e8)
+        ;
+
+        
+    
+    
+            var marker_35447707091444969c7a338db761a5a3 = L.marker(
+                [37.48876924, 126.9813284],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_3102a9b4f37c461ab5af2992cdb13ed6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b63715c149a443bad754410aa858a35 = $(`<div id="html_0b63715c149a443bad754410aa858a35" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">육대장이수역점</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com//file/store/239/239eab3530b942a4b7b4fc9db5f97f4e.jpg" , style="width:200px;height:150px;">     </p> 주소: 서울 동작구 사당동 89-6<br> 영업시간: 오전11시~오후9시<br> 휴업일: 연중무휴<br> 제공품목: 육개장,설렁탕<br> 제공대상: 결식아동,독거노인 및 동반 1인<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/239  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_3102a9b4f37c461ab5af2992cdb13ed6.setContent(html_0b63715c149a443bad754410aa858a35);
+        
+
+        marker_35447707091444969c7a338db761a5a3.bindPopup(popup_3102a9b4f37c461ab5af2992cdb13ed6)
+        ;
+
+        
+    
+    
+            var marker_8b4a50996c724c1caa36b3230306ed5c = L.marker(
+                [37.55635049, 126.9542749],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_bc4e0a3f32524a1c9b7d3d166e1d3f9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1f05025a86d4c6aa9521674c9be6805 = $(`<div id="html_c1f05025a86d4c6aa9521674c9be6805" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">커피프릭</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com//file/store/929/d1cc83fdf141414d9bf2622fc90824bf.jpg" , style="width:200px;height:150px;">     </p> 주소: 서울 마포구 굴레방로7길 22<br> 영업시간: 09:00~22:00<br> 휴업일: 구정, 추석 휴무<br> 제공품목: nan<br> 제공대상: 결식아동,독거노인,경찰 및 아이 본인만<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/929  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_bc4e0a3f32524a1c9b7d3d166e1d3f9d.setContent(html_c1f05025a86d4c6aa9521674c9be6805);
+        
+
+        marker_8b4a50996c724c1caa36b3230306ed5c.bindPopup(popup_bc4e0a3f32524a1c9b7d3d166e1d3f9d)
+        ;
+
+        
+    
+    
+            var marker_61ab4ae086484b28b3390741f0294027 = L.marker(
+                [37.55223793, 126.9134894],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_b4764beeaa0f482db57ddb0afc4695f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72319db3aca04f4aafae67c3522aab1e = $(`<div id="html_72319db3aca04f4aafae67c3522aab1e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">깊이</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com//file/store/537/784e703e29ee4353b2dae6d9842ab6c2.jpg" , style="width:200px;height:150px;">     </p> 주소: 서울 마포구 서교동 384-14<br> 영업시간: 매일 10:00 ~ 24:00<br> 휴업일: 없음<br> 제공품목: nan<br> 제공대상: 결식아동,독거노인,경찰 공무원 소방공무원 2% 할인  및 동반 1인<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/537  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_b4764beeaa0f482db57ddb0afc4695f6.setContent(html_72319db3aca04f4aafae67c3522aab1e);
+        
+
+        marker_61ab4ae086484b28b3390741f0294027.bindPopup(popup_b4764beeaa0f482db57ddb0afc4695f6)
+        ;
+
+        
+    
+    
+            var marker_61a55387fb944f548a06b05a56d11828 = L.marker(
+                [37.5503889, 126.9209387],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_938a4a12cae9406891ac6782ae791f89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62faca836ae64e9289e41d8a0e49e5ef = $(`<div id="html_62faca836ae64e9289e41d8a0e49e5ef" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">슈츄안</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com//file/store/575/3d6b4d4bdb5040619a417644e0352b95.jpeg" , style="width:200px;height:150px;">     </p> 주소: 서울 마포구 서교동 405-17<br> 영업시간: 오전11~익일 오전6시<br> 휴업일: 연중무휴<br> 제공품목: nan<br> 제공대상: 결식아동,초등~고등학교1학년까지만(학생증확인) 및 본인+동반1인, 복지카드+학생증지참<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/575  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_938a4a12cae9406891ac6782ae791f89.setContent(html_62faca836ae64e9289e41d8a0e49e5ef);
+        
+
+        marker_61a55387fb944f548a06b05a56d11828.bindPopup(popup_938a4a12cae9406891ac6782ae791f89)
+        ;
+
+        
+    
+    
+            var marker_f09c14941eb644c7858f8ecfafe79085 = L.marker(
+                [37.56735783, 126.9288694],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_ca7090b21c5146e4950052935f1b7822 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_711eb0a5b2654f57b24ae68d100b6295 = $(`<div id="html_711eb0a5b2654f57b24ae68d100b6295" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">준에이치(JUNH)</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com//file/store/915/00d4afda7f554cccaf4b552e5bea14c0.jpeg" , style="width:200px;height:150px;">     </p> 주소: 서울 서대문구 연희동 130-13<br> 영업시간: 11:00 ~ 18:00<br> 휴업일: 월요일<br> 제공품목: 원데이클래스<br> 제공대상: 결식아동,저소득층 복지누리카드소지자 및 동반 1인<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/915  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_ca7090b21c5146e4950052935f1b7822.setContent(html_711eb0a5b2654f57b24ae68d100b6295);
+        
+
+        marker_f09c14941eb644c7858f8ecfafe79085.bindPopup(popup_ca7090b21c5146e4950052935f1b7822)
+        ;
+
+        
+    
+    
+            var marker_dfbb6db6ccce4ecc9f0ff390b3418723 = L.marker(
+                [37.54369624, 127.0626068],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_d687a1794b7642a78aaf28f5b2a3c0a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_032a6a656da14f06ac975ee21020a5b7 = $(`<div id="html_032a6a656da14f06ac975ee21020a5b7" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">루트비커피 성수점</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com//file/store/848/dda3274034a442a8b01290eca7487dbe.jpg" , style="width:200px;height:150px;">     </p> 주소: 서울 성동구 아차산로15길 10<br> 영업시간: 07:00 ~ 18:30<br> 휴업일: 일요일 (임시휴무있음)<br> 제공품목: nan<br> 제공대상: 결식아동,독거노인,소방관 1인 무료, 추가인원5%할인 및 아이 본인만<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/848  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_d687a1794b7642a78aaf28f5b2a3c0a1.setContent(html_032a6a656da14f06ac975ee21020a5b7);
+        
+
+        marker_dfbb6db6ccce4ecc9f0ff390b3418723.bindPopup(popup_d687a1794b7642a78aaf28f5b2a3c0a1)
+        ;
+
+        
+    
+    
+            var marker_5c3a7152162b428bac1463298ca9737a = L.marker(
+                [37.60712437, 127.0154451],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_2baa68c1199143e68b2e02e926215e40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14f52af699fa403e939798bdfe6b4bef = $(`<div id="html_14f52af699fa403e939798bdfe6b4bef" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">하오하오츠</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com//file/store/240/c96683e00f1245aa8b4fcde17f40a147.png" , style="width:200px;height:150px;">     </p> 주소: 서울 성북구 서경로 37<br> 영업시간: 11:00 ~ 21:30 (마지막 주문 20:30)<br> 휴업일: 평일 15:00 ~ 17:00 신정,명절당일<br> 제공품목: nan<br> 제공대상: 결식아동,독거노인,군인 경찰 및 동반 1인<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/240  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_2baa68c1199143e68b2e02e926215e40.setContent(html_14f52af699fa403e939798bdfe6b4bef);
+        
+
+        marker_5c3a7152162b428bac1463298ca9737a.bindPopup(popup_2baa68c1199143e68b2e02e926215e40)
+        ;
+
+        
+    
+    
+            var marker_f7bf7e6b64f246329264f53bb257c590 = L.marker(
+                [37.604307, 127.0429812],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_65447709485c428f88c3d34bfd2ba2b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_325907f7d5c54e658c793d5556c96739 = $(`<div id="html_325907f7d5c54e658c793d5556c96739" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">샤롱샤롱</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com//file/store/257/8f3d081ba4e048a7973244e1f71e5cfe.jpg" , style="width:200px;height:150px;">     </p> 주소: 서울 성북구 장월로1길 111<br> 영업시간: 화수목금 12:30~7시(제품 소진시 조기마감)<br> 휴업일: 토일월<br> 제공품목: nan<br> 제공대상: 결식아동,기초수급가정아동 및 아이 본인만<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/257  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_65447709485c428f88c3d34bfd2ba2b9.setContent(html_325907f7d5c54e658c793d5556c96739);
+        
+
+        marker_f7bf7e6b64f246329264f53bb257c590.bindPopup(popup_65447709485c428f88c3d34bfd2ba2b9)
+        ;
+
+        
+    
+    
+            var marker_2d739bf7c321431b97e38d3c227aa8ce = L.marker(
+                [37.60945421, 127.0522897],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_e84cb94c74794fdd9aadb1aa86e6b0d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ba5d377aff24fbf9cbf006d2fe491ba = $(`<div id="html_8ba5d377aff24fbf9cbf006d2fe491ba" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">발효명가기와집갈비</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com/images/header_logo.png" , style="width:200px;height:150px;">     </p> 주소: 서울 성북구 화랑로25길 18<br> 영업시간: 오전11~오후10<br> 휴업일: 매주 일요일<br> 제공품목: 식사류<br> 제공대상: 결식아동,독거노인 및 동반 1인<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/129  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_e84cb94c74794fdd9aadb1aa86e6b0d5.setContent(html_8ba5d377aff24fbf9cbf006d2fe491ba);
+        
+
+        marker_2d739bf7c321431b97e38d3c227aa8ce.bindPopup(popup_e84cb94c74794fdd9aadb1aa86e6b0d5)
+        ;
+
+        
+    
+    
+            var marker_851d6b54fe15459e9b90c270196a130b = L.marker(
+                [37.50988915, 127.1103261],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_e2bdd95c18d747e8a72f531bc18f2a2b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37df5f7e5ff64041a2b344138fd20b33 = $(`<div id="html_37df5f7e5ff64041a2b344138fd20b33" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">천향마라탕잠실점</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com//file/store/507/133e9269a24b4fa593821747822e039d.jpg" , style="width:200px;height:150px;">     </p> 주소: 서울 송파구 송파동 51-8<br> 영업시간: 10:00 -22:00<br> 휴업일: 연중무휴<br> 제공품목: 마라탕<br> 제공대상: 결식아동,독거노인,65세이상 어르신 및 동반 2인<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/507  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_e2bdd95c18d747e8a72f531bc18f2a2b.setContent(html_37df5f7e5ff64041a2b344138fd20b33);
+        
+
+        marker_851d6b54fe15459e9b90c270196a130b.bindPopup(popup_e2bdd95c18d747e8a72f531bc18f2a2b)
+        ;
+
+        
+    
+    
+            var marker_fd41c834a97f4fa98ff4ef688bc19853 = L.marker(
+                [37.47501456, 127.1416298],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_c36a59a7a99f4f83952aabfcfb545bff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29634b866aa6418b9a862ff31335533f = $(`<div id="html_29634b866aa6418b9a862ff31335533f" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">북경짜장 위례신도시점</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com//file/store/598/bd028e3deb7d4cc9abb476545e993dff.jpg" , style="width:200px;height:150px;">     </p> 주소: 서울 송파구 위례광장로 120<br> 영업시간: 10:00~20:30<br> 휴업일: 없음<br> 제공품목: 짜장, 짬뽕, 볶음밥,1인탕수육등등<br> 제공대상: 결식아동,독거노인,정말 돈없고 배고픈 사람들 및 아이 본인만<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/598  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_c36a59a7a99f4f83952aabfcfb545bff.setContent(html_29634b866aa6418b9a862ff31335533f);
+        
+
+        marker_fd41c834a97f4fa98ff4ef688bc19853.bindPopup(popup_c36a59a7a99f4f83952aabfcfb545bff)
+        ;
+
+        
+    
+    
+            var marker_1b73f71dfa2a42baba5ed84d703bc15c = L.marker(
+                [37.52216881, 126.8600582],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_c9ae0bb14c984eaf9ea56eb11db85427 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d729390a4c84439bcf48e2e158ee0ef = $(`<div id="html_8d729390a4c84439bcf48e2e158ee0ef" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">피자베이본점</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com//file/store/184/03d398ee65d34784af8841b265dd21ca.jpg" , style="width:200px;height:150px;">     </p> 주소: 서울 양천구 신월로 351<br> 영업시간: 오전 11시부터 밤 12시까지<br> 휴업일: nan<br> 제공품목: 오늘의요일피자 와 음료수 증정<br> 제공대상: 결식아동,독거노인,식사를 잘못하는 불우한이웃!! 및 피자 한판으로 제공<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/184  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_c9ae0bb14c984eaf9ea56eb11db85427.setContent(html_8d729390a4c84439bcf48e2e158ee0ef);
+        
+
+        marker_1b73f71dfa2a42baba5ed84d703bc15c.bindPopup(popup_c9ae0bb14c984eaf9ea56eb11db85427)
+        ;
+
+        
+    
+    
+            var marker_e3b5a7989dc340b5a8d4fccdf8a0eb5e = L.marker(
+                [37.53278886, 126.9595585],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_45a9e34265794570a46bdfaa63ab4477 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b34d5d982d44ce98cfb82326613a2da = $(`<div id="html_1b34d5d982d44ce98cfb82326613a2da" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">더트레인</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com//file/store/295/3b1bb4a6c2024826bfc08105cbbb7661.jpg" , style="width:200px;height:150px;">     </p> 주소: 서울 용산구 청파로 74<br> 영업시간: 11시~20시<br> 휴업일: 없음<br> 제공품목: 음료 및 기차모디오라마 10분 무료<br> 제공대상: 결식아동,독거노인,군장병 및 동반 1인<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/295  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_45a9e34265794570a46bdfaa63ab4477.setContent(html_1b34d5d982d44ce98cfb82326613a2da);
+        
+
+        marker_e3b5a7989dc340b5a8d4fccdf8a0eb5e.bindPopup(popup_45a9e34265794570a46bdfaa63ab4477)
+        ;
+
+        
+    
+    
+            var marker_c34098f86cff4d56b362a610153b177c = L.marker(
+                [37.6377915, 126.936819],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_94d2d67da697460ba1e582a5fbff2b37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37c49cd7161d4441be0e37c14291914b = $(`<div id="html_37c49cd7161d4441be0e37c14291914b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">달아요</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com//file/store/919/b2e72e65a6474a34981ec217be41dc98.jpg" , style="width:200px;height:150px;">     </p> 주소: 서울 은평구 연서로48길 11<br> 영업시간: 10시부터 2시<br> 휴업일: 없음<br> 제공품목: 과일<br> 제공대상: 결식아동,독거노인,독거노인 및 동반 1인<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/919  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_94d2d67da697460ba1e582a5fbff2b37.setContent(html_37c49cd7161d4441be0e37c14291914b);
+        
+
+        marker_c34098f86cff4d56b362a610153b177c.bindPopup(popup_94d2d67da697460ba1e582a5fbff2b37)
+        ;
+
+        
+    
+    
+            var marker_369600ae20bd419da58e6f4daf4206cf = L.marker(
+                [37.5971843, 126.9197235],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_5031e74524f34c0aa1ef4a195ca79e74 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b98d98d96047442fbffd36ba323095f9 = $(`<div id="html_b98d98d96047442fbffd36ba323095f9" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">단발소녀</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com//file/store/81/a5b77599afe84851938ee3a122a0ee93.jpg" , style="width:200px;height:150px;">     </p> 주소: 서울 은평구 응암로 285<br> 영업시간: 11~21<br> 휴업일: 없음<br> 제공품목: nan<br> 제공대상: 결식아동,독거노인,국가유공자 및 아이 본인만<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/81  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_5031e74524f34c0aa1ef4a195ca79e74.setContent(html_b98d98d96047442fbffd36ba323095f9);
+        
+
+        marker_369600ae20bd419da58e6f4daf4206cf.bindPopup(popup_5031e74524f34c0aa1ef4a195ca79e74)
+        ;
+
+        
+    
+    
+            var marker_533a223c160d4067a0f5ea5b47ffc763 = L.marker(
+                [37.58907805, 127.0931941],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_6683454bbea047fb97b56c417b6f5e01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_608c1eb5922e4773a66fe68aabe88f57 = $(`<div id="html_608c1eb5922e4773a66fe68aabe88f57" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">소소한얼</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com//file/store/721/df12e68ebb0f4925b3e09b49adad1f9a.jpg" , style="width:200px;height:150px;">     </p> 주소: 서울 중랑구 겸재로50길 53<br> 영업시간: 11:00~23:00<br> 휴업일: 없음<br> 제공품목: 식혜.수정과<br> 제공대상: 결식아동,독거노인,독거노인 및 동반 2인<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/721  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_6683454bbea047fb97b56c417b6f5e01.setContent(html_608c1eb5922e4773a66fe68aabe88f57);
+        
+
+        marker_533a223c160d4067a0f5ea5b47ffc763.bindPopup(popup_6683454bbea047fb97b56c417b6f5e01)
+        ;
+
+        
+    
+    
+            var marker_2637f2c4c23a4820831f2ed424e56bbf = L.marker(
+                [37.60933564, 127.0741511],
+                {}
+            ).addTo(marker_cluster_c9b97ce1721f4af384d55b4a271fc88c);
+        
+    
+        var popup_6c2efe0f53a043e4be0b588e6d6c087e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d67dcb9384bf4d05a4ae0c2f2e8e0f68 = $(`<div id="html_d67dcb9384bf4d05a4ae0c2f2e8e0f68" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>      </head>     <body style="width:200px">     <pre>     <h3 style="text-align:center;">카페더메뉴얼</h3>     <p style="text-align:center;">     <img class="center" src="https://xn--o39akkz01az4ip7f4xzwoa.com/images/header_logo.png" , style="width:200px;height:150px;">     </p> 주소: 서울 중랑구 동일로157길 65<br> 영업시간: 11:00-20:00<br> 휴업일: 매주 수요일 휴무<br> 제공품목: nan<br> 제공대상: 결식아동,독거노인 어르신 및 가족이나 친구들과 함께 와도 좋습니다<br> <div style="text-align:center;"> <a href=http://localhost:8000/ddabob/126  target="_blank">자세히보기</a> </div>     </pre>     </body>     </div>`)[0];
+            popup_6c2efe0f53a043e4be0b588e6d6c087e.setContent(html_d67dcb9384bf4d05a4ae0c2f2e8e0f68);
+        
+
+        marker_2637f2c4c23a4820831f2ed424e56bbf.bindPopup(popup_6c2efe0f53a043e4be0b588e6d6c087e)
+        ;
+
+        
+    
+</script>
